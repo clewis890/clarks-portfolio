@@ -11,6 +11,11 @@
 
 }
 
+h4.introduction:hover {
+    font-style: italic;
+    color: rgb(132, 132, 214);
+}
+
 p.mystory {
     font-size: 18px;
 }

@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { Divider, Segment } from 'semantic-ui-react';
 import {AwesomeButton} from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-blue.css';
-
+import { Container, Col, Row, Image } from 'react-bootstrap';
 import profilepic from '../portfoliopics/profpic.jpg';
+
+import '../style/Home.css';
 
 class Home extends React.Component {
     render() {
@@ -29,19 +31,24 @@ class Home extends React.Component {
                     Photography
                 </AwesomeButton>
                 </Link>
+                <Container className="profilepic">
+                    <Row>
+                        <Col xs={2} md={4}>
+                            <Image className="profilepic" src={profilepic} roundedCircle />
+                        </Col>
+                    </Row>
+                </Container>
     </div>
 </div>
-    <div className="ui vertical segment" style={{textPosition: 'center', width: '40rem'}}>
-        
-            <h4>My name is Clark Lewis and I am a programmer! This is my first site. 
+    <div className="ui vertical segment" style={{marginLeft: '20px', width: '40rem'}}>
+        <h4 className="introduction" style={{textAlign: 'center', fontSize: '30px'}}><strong>Welcome to my website!</strong></h4>
+            <p className="mystory">My name is Clark Lewis and I am a programmer! This is my first site. 
                 I am looking for my first professional opportunity as a Web Developer.
                 I work with the Front End stack, mainly HTML, CSS,  and JavaScript.
                 I also work with the Framework React JS and Redux.
-            </h4>
+            </p>
+            <Divider />
             <p className="mystory">I have had interest in getting into programming for the last 3 years now. I have been in a career that I just wasn't passionate about, I saw myself at a dead-end. So at the end of 2019 I decided to give programming a try. I started with a free course and after a few months I decided to get a few more advanced courses to jump-start my learning. My short-term goal is to take on a Web Developer or Front-End Developer position to develop myself as a programmer and build up my skillset.</p>
-        </div>
-        <div className="container-sm">
-            <img className="profilepic" src={profilepic} alt="Me on a boat" />
         </div>
         <div>
 
