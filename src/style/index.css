@@ -1,0 +1,30 @@
+* {
+    font-family: Georgia, sans-serif;
+
+}
+
+.jumbotron {
+    background-color: darkGrey; 
+    margin: '0'!important ;
+    text-align: center !important;
+    position: static !important;
+
+}
+
+p.mystory {
+    font-size: 18px;
+}
+
+ul.aboutme {
+    list-style: none;
+    font-size: 18px;
+}
+
+.aws-btn {
+    --button-secondary-color: #696a8f !important;
+    --button-secondary-color-dark: #55557a !important;
+    --button-secondary-color-light: #cbcbdc !important;
+    --button-secondary-color-hover: #434563 !important;
+    margin: 4px 8px;
+}
+

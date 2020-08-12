@@ -1,0 +1,22 @@
+.body {
+    background-color: #e5e0ee;
+    font-family: Georgia;
+    color: white;
+}
+
+.p #description {
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.ui-vertical-segment {
+    position: center;
+}
+
+img.profilepic {
+    height: auto;
+    width: 200px;
+    vertical-align: right;
+    margin-bottom: 0;
+    flex-grow: 1;
+    }
