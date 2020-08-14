@@ -1,3 +1,56 @@
-.ui-grid-container {
-    background-color: lightgray;
+* {
+font-family: 'Titillium Web', sans-serif;
+
 }
+
+h2.aboutme {
+    font-weight: 600;
+}
+
+
+div.aboutme {
+    text-align: left !important;
+    list-style: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px;
+}
+
+div#textcontainer {
+    font-size: 20px;
+    height: auto;
+    overflow: auto;
+    flex-grow: 1;
+    min-width: auto;
+}
+
+
+@media (max-aspect-ratio: 1/1) and (max-width: 768px) {
+    
+    body {
+    width: 100%;
+     flex-shrink: 1;
+     padding: 1em;
+    }
+    ul {
+        width: 100%;
+     flex-shrink: 1;
+     padding: 1em;
+    }
+    li {
+        width: 100%;
+     flex-shrink: 1;
+     padding: 1em;
+    }
+    div#textcontainer {
+        margin-right: 30px;
+    }
+    }
+
+
+li {
+    position: static;
+    padding-left: 10%;
+    
+}
+

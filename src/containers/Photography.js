@@ -12,14 +12,22 @@ import ldstemple from '../portfoliopics/ldstemple.jpg';
 import sunset from '../portfoliopics/sunset.jpg';
 import desert from '../portfoliopics/desert.jpg';
 import redrocks from '../portfoliopics/redrocks.jpg';
+import boats from '../portfoliopics/boats.jpg';
 
-
+var jumboStyle = {
+    width: '100%',
+    height: 'auto',
+    position: 'fixed',
+    backgroundPosition: 'bottom',
+    backgroundImage: `url(${boats})`,
+    textAlign: 'left',
+}
 
 class Photography extends React.Component{
     render() {
         return (
-            <body>
-                <div className="jumbotron jumbotron-fluid" >
+            <div>
+                <div className="jumbotron jumbotron-fluid" style={ jumboStyle }>
                  <div className="container">
         <h1 className="display-4">Clark Lewis</h1>
         <h3>I'm a Programmer</h3>
@@ -35,9 +43,10 @@ class Photography extends React.Component{
             </Link>
                 </div>
                 </div>
-                <div className="centered">
+                <body>
+            <div className="photography">
             <h2><strong>Photography</strong></h2>
-            <h4>I enjoy taking pictures in my free time. All these pictures are taken with the iPhone XR. Enjoy!</h4>
+            <h4 id="imgheader">I enjoy taking pictures in my free time. All these pictures are taken with the iPhone XR. Enjoy!</h4>
            <ul className="pics">
                <li className="pics">
                   <img src={island} alt="island" />
@@ -70,13 +79,16 @@ class Photography extends React.Component{
                 <img src={redrocks} alt="Red rocks behind house"/>
                 </li>
            </ul>
+           </div>
+           </body>
            <footer>
-                <Link to="https://www.linkedin.com/in/clark-lewis" className="link">Connect with me on LinkedIn</Link><br />
-                <Link to="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</Link>
-                </footer>
-                </div>
-            </body>
-           
+        <div id="footer">
+        <Link to="https://www.linkedin.com/in/clark-lewis" className="link">Connect with me on LinkedIn</Link><br />
+        <Link to="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</Link>
+        </div>
+        <p className="copyright">&copy; Copyright 2020 | Clark Lewis</p>
+    </footer>          
+           </div>
         )
     };
 }

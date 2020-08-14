@@ -1,10 +1,10 @@
 * {
-    font-family: Georgia, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 
 }
 
 .jumbotron {
-    background-color: darkGrey; 
+    font-family: 'Titillium Web', sans-serif;
     margin: '0'!important ;
     text-align: center !important;
     position: static !important;
@@ -21,8 +21,8 @@ p.mystory {
 }
 
 ul.aboutme {
-    list-style: none;
     font-size: 18px;
+    text-align: left;
 }
 
 .aws-btn {
@@ -30,6 +30,19 @@ ul.aboutme {
     --button-secondary-color-dark: #55557a !important;
     --button-secondary-color-light: #cbcbdc !important;
     --button-secondary-color-hover: #434563 !important;
+    -button-secondary-border: 3px solid #FFFFFF !important;
     margin: 4px 8px;
+
 }
 
+p.copyright {
+    font-size: 20px;
+    text-align: center;
+}
+
+div#footer {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500px;
+}
