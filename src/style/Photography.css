@@ -78,3 +78,10 @@ li:last-child {
       border:
     }
   }
+
+  @media (max-aspect-ratio: 1/1) and (max-width: 780px) {
+    li {
+      height: auto;
+      width: 100%;
+    }
+  }

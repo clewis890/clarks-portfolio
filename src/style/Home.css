@@ -3,28 +3,63 @@
     color: white;
 }
 
+h4.introduction:hover {
+    font-style: italic;
+    color: rgb(132, 132, 214);
+}
+
+.introduction {
+    font-size: 30px;
+    line-height: 2;
+}
+
 .p #description {
     font-size: 20px;
     font-weight: 600px;
 }
 
 
-.introduction {
-    
-    font-size: 30px;
-}
 
-@media (max-width: 480px) {
+@media (max-aspect-ratio: 1/1) and (max-width: 520px) {
     div#introduction {
-        padding:0;
-        margin:0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 50%;
+        margin-left: 0 !important;
+        margin-right: 80px;
+        width: auto;
+        height: 100%;
+
+      }
+      .intro {
+          width: 100%;
+          float: left;
+          margin-right: 100px;
       }
   
-      body {
-        padding:0;
-      }
 }
 
+@media (max-aspect-ratio: 1/1) and (max-width: 780px) {
+    div#introduction {
+        margin-left: 0 !important;
+        margin-right: 80px;
+        width: auto;
+        height: 100%;
+    }
+        .intro {
+            width: 100%;
+            float: left;
+            margin-right: 100px;
+        }
+}
+
+@media (max-aspect-ratio: 1/1) and (min-width: 900px) {
+div#introduction {
+    margin-left: 0 !important;
+    margin-right: 80px;
+    width: auto;
+    height: 100%;
+}
+    .intro {
+        width: 100%;
+        float: left;
+        margin-right: 100px;
+    }
+}
