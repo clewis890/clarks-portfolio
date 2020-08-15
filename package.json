@@ -12,6 +12,7 @@
     "bootstrap": "^4.5.0",
     "emailjs-com": "^2.4.1",
     "jquery": "^3.5.1",
+    "package-lock.json": "^1.0.0",
     "react": "^16.13.1",
     "react-awesome-button": "^6.5.1",
     "react-bootstrap": "^1.2.2",
