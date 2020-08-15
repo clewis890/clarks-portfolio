@@ -1,92 +1,103 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Divider } from 'semantic-ui-react';
 import { AwesomeButton } from 'react-awesome-button';
 import '../style/AboutMe.css';
+import columbiariver from '../portfoliopics/columbiariver.jpg';
+import boats from '../portfoliopics/boats.jpg';
+
+var jumboStyle = {
+    width: '100%',
+    height: 'auto',
+    position: 'fixed',
+    backgroundPosition: 'bottom',
+    backgroundImage: `url(${boats})`,
+    textAlign: 'left',
+};
+
+var backgroundStyle = {
+    marginTop: '-28px',
+    height: '1000px',
+    width: '100%',
+    backgroundPosition: 'center',
+    backgroundSize: '100% 100%',
+    backgroundRepeat: 'no-repeat',
+    display: 'flex',
+    top: '297px',
+    left: '0',
+    marginLeft: '0',
+    backgroundImage: `url(${columbiariver})`
+};
 
 class AboutMe extends React.Component { 
     render() {
         return (
-<body style={{textAlign: 'center'}}>
-    <header style={{marginBottom: '0'}}>
-<div className="jumbotron jumbotron-fluid" style={{textAlign: 'left'}}>
-   <div className="container">
-        <h1 className="display-4">Clark Lewis</h1>
-        <h3 className="jumbo-description">I'm a Programmer</h3>
-        <Link exact to="./" className="heroButton">
-        <AwesomeButton size="medium" type="secondary">
-       Home
-        </AwesomeButton>
-        </Link>
-        <Link exact to="/about-me" className="heroAwesomeButton">
-        <AwesomeButton size="medium" type="secondary">
-       About Me
-        </AwesomeButton>
-        </Link>
-        <Link exact to="./photography" className="heroButton">
-        <AwesomeButton size="medium" type="secondary">
-       Photography
-        </AwesomeButton>
-        </Link>
-        
-    </div>
-</div>
-</header>
-<div className="ui grid container">
-    <div className="four wide column">
-    <h2 className="aboutme">I'm learning to code! My long-term goals include:</h2>
-    <div id="goals">
-        <ul className="aboutme">
-          <li>Become a world-class programmer</li>
-          <li>Create ground-breaking technology</li>
-          <li>Help the world become a better place</li>
-            <li></li>
-        </ul>
-        </div>  
-    </div>
-    <div className="four wide column">
-    <h2 className="aboutme">Courses</h2>
-        <div id="courses">
-        <ul className="aboutme">
-            <li>Udemy</li>
-            <li>Codecademy</li>
-        </ul>    
-    </div>
-</div>
-<div className="four wide column">
-    <h2 className="aboutme">Languages, Frameworks, & Skills</h2>
-        <div id="languages">
-            <ul className="aboutme">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React JS</li>
-                <li>Redux</li>
-                <li>APIs</li>
-            </ul>    
-        </div>
-</div>
-<div className="four wide column">
-    <h2 className="aboutme">My Hobbies Include:</h2>
-        <ul className="aboutme">
-            <li>Coding</li>
-            <li>Photography</li>
-            <li>Drinking Yerba Mate</li>
-            <li>Traveling</li>
-            <li>Hiking</li>
-            <li>Fishing</li>
-        </ul>    
-</div>
-</div>
-
-
-
-    <footer>
-        <Link to="https://www.linkedin.com/in/clark-lewis" className="link">Connect with me on LinkedIn</Link><br />
-        <Link to="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</Link>
-    </footer>
-</body>
-  
+            <div>
+            <div className="jumbotron jumbotron-fluid" style={ jumboStyle }>
+                <div id="header" >
+                    <h1 className="display-4">Clark Lewis</h1>
+                    <h2 className="jumbo-description">I'm a Programmer</h2>
+                        <Link exact to="./" className="heroButton">
+                        <AwesomeButton size="medium" type="secondary">
+                        Home
+                        </AwesomeButton>
+                        </Link>
+                        <Link exact to="./photography" className="heroButton">
+                        <AwesomeButton size="medium" type="secondary">
+                        Photography
+                        </AwesomeButton>
+                        </Link>
+                </div>
+            </div>
+                <body className="aboutme" style={ backgroundStyle }>
+                    <div className="container" id="about">
+                    <div id="aboutme" className="ui four column doubling stackable grid container">
+                        <div className="column">
+	                        <b>My goals</b>
+                                <Divider />
+                                <p>Become a world-class programmer</p>
+                                <p>Make the world a better place</p>
+	                            <p>Create ground-breaking technology</p>
+                        </div>
+                        <div className="column">
+                            <b>Courses</b>
+                            <Divider />
+                                <p>Udemy</p>
+                                <p>Codecademy</p>
+                        </div>
+                        <div className="column">
+	                        <b>Languages, Frameworks, & Skills</b>
+                            <Divider />
+                                <p>HTML5</p>
+	                            <p>CSS3</p>
+	                            <p>JavaScript</p>
+	                            <p>React JS</p>
+	                            <p>Redux</p>
+	                            <p>JSON</p>
+    	                        <p>Git & GitHub</p>
+                        </div>
+                        <div className="column">
+	                        <b>My Hobbies Include</b>
+                            <Divider />
+                                <p>Photography</p>  
+                                <p>Drinking Yerba Mate</p>
+                                <p>Traveling</p>
+                                <p>Co-host on a podcast about Yerba Mate, <Link target="_blank" rel="noopener" to="www.mateguys.com">The Mate Guys</Link></p>
+                                <p>Hiking</p>
+                                <p>Fishing</p>
+                        </div>
+                    </div>
+                    </div>
+                </body>
+                <footer>
+                    <div id="footer">
+                        <Link target="_blank" rel="noopener" to="https://www.linkedin.com/in/clark-lewis" className="link">Connect with me on LinkedIn</Link><br />
+                        <Link to="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</Link>
+                    </div>
+                        <p className="copyright">&copy; Copyright 2020 | Clark Lewis</p>
+                </footer>
+            </div>  
         )
     };
 }
