@@ -1,6 +1,10 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "description": "My portfolio site",
+  "engines": {
+    "node": "12.x"
+  },
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -27,9 +31,15 @@
     "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^1.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://www.https://github.com/clewis890/clarks-portfolio",
+    "version": "2.27.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "heroku-postbuild": "react-scripts build --prod",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
