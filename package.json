@@ -2,8 +2,10 @@
   "name": "portfolio",
   "version": "0.1.0",
   "description": "My portfolio site",
+  "homepage": "http://clarkglewis.com",
   "engines": {
     "node": "12.x"
+    
   },
   "private": true,
   "dependencies": {
