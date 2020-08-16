@@ -63,8 +63,8 @@ class Photography extends React.Component{
             </body>
             <footer>
                 <div id="footer">
-                    <Link target="_blank" rel="noopener" to="https://www.linkedin.com/in/clark-lewis" className="link">Connect with me on LinkedIn</Link><br />
-                    <Link to="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</Link>
+                    <a href="https://www.linkedin.com/in/clark-lewis" target="_blank" rel="noopener noreferrer" className="link">Connect with me on LinkedIn</a><br />
+                    <a href="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</a>
                 </div>
                     <p className="copyright">&copy; Copyright 2020 | Clark Lewis</p>
             </footer>          

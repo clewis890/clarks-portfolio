@@ -83,7 +83,7 @@ class AboutMe extends React.Component {
                                 <p>Photography</p>  
                                 <p>Drinking Yerba Mate</p>
                                 <p>Traveling</p>
-                                <p>Co-host on a podcast about Yerba Mate, <Link target="_blank" rel="noopener" to="www.mateguys.com">The Mate Guys</Link></p>
+                                <p>Co-host on a podcast about Yerba Mate, <a href="http://www.mateguys.com" target="_blank" rel="noopener noreferrer">The Mate Guys</a></p>
                                 <p>Hiking</p>
                                 <p>Fishing</p>
                         </div>
@@ -92,8 +92,8 @@ class AboutMe extends React.Component {
                 </body>
                 <footer>
                     <div id="footer">
-                        <Link target="_blank" rel="noopener" to="https://www.linkedin.com/in/clark-lewis" className="link">Connect with me on LinkedIn</Link><br />
-                        <Link to="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</Link>
+                        <a href="http://www.linkedin.com/in/clark-lewis" target="_blank" rel="noopener noreferrer" className="link">Connect with me on LinkedIn</a><br />
+                        <a href="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</a>
                     </div>
                         <p className="copyright">&copy; Copyright 2020 | Clark Lewis</p>
                 </footer>
