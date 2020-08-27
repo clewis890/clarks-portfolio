@@ -64,3 +64,15 @@ li {
     padding-left: 10%;
     
 }
+
+@media (min-width: 375px) and (max-width: 414px) {
+    b#languages {
+        line-height: 26px;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+}

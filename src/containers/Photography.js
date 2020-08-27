@@ -50,19 +50,19 @@ class Photography extends React.Component{
                         <ul className="pics">
                             <li className="pics"><img src={island} alt="island" /></li>
                             <li className="pics"><img src={boatsandhills} alt="Ocean bay with boats"/></li>
-                            <li className="pics"><img src={bigcity} alt="big city"/></li>
+                            <li className="pics" id="downtown"><img src={bigcity} alt="big city"/></li>
                             <li className="pics"><img src={ocean} alt="islands in the ocean"/></li>
                             <li className="pics"><img src={tropical} alt="sunset over mountains"/></li>
                             <li className="pics"><img src={ldstemple} alt="lds temple Porto Alegre Brazil"/></li>
                             <li className="pics"><img src={sunset} alt="Sunset over Porto Alegre Brazil"/></li>
                             <li className="pics"><img src={boats} alt="Bay with boats"/></li>
                             <li className="pics"><img src={desert} alt="desert"/></li>
-                            <li className="pics"><img src={redrocks} alt="Red rocks behind house"/></li>
+                            <li className="pics" id="redrocks"><img src={redrocks} alt="Red rocks behind house"/></li>
                         </ul>
                 </div>
             </body>
             <footer>
-                <div id="footer">
+                <div className="footer" id="footer">
                     <a href="https://www.linkedin.com/in/clark-lewis" target="_blank" rel="noopener noreferrer" className="link">Connect with me on LinkedIn</a><br />
                     <a href="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</a>
                 </div>

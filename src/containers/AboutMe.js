@@ -67,7 +67,7 @@ class AboutMe extends React.Component {
                                 <p>Codecademy</p>
                         </div>
                         <div className="column">
-	                        <b>Languages, Frameworks, & Skills</b>
+	                        <b id="languages">Languages, Frameworks, & Skills</b>
                             <Divider />
                                 <p>HTML5</p>
 	                            <p>CSS3</p>

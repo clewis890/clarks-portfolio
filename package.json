@@ -42,7 +42,7 @@
     "version": "2.27.x"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "heroku-prebuild": "echo",
     "heroku-postbuild": "react-scripts build --prod",
