@@ -5,7 +5,6 @@
   "homepage": "http://clarkglewis.com",
   "engines": {
     "node": "12.x"
-    
   },
   "private": true,
   "dependencies": {
@@ -15,7 +14,7 @@
     "@testing-library/user-event": "^7.2.1",
     "argon-design-system-react": "^1.1.0",
     "axios": "^0.19.2",
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.2",
     "emailjs-com": "^2.4.1",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
@@ -27,14 +26,18 @@
     "react-bootstrap": "^1.2.2",
     "react-columns": "^1.2.1",
     "react-dom": "^16.13.1",
+    "react-hamburger-menu": "^1.2.1",
+    "react-icons": "^3.11.0",
     "react-mailto": "^0.4.0",
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-scroll-parallax": "^2.3.4",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "semantic-ui-react": "^1.0.0"
+    "semantic-ui-react": "^1.0.0",
+    "styled-components": "^5.1.1"
   },
   "repository": {
     "type": "git",
