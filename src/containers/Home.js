@@ -1,77 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Divider } from 'semantic-ui-react';
-import {AwesomeButton} from 'react-awesome-button';
-import 'react-awesome-button/dist/themes/theme-blue.css';
-import boats from '../portfoliopics/boats.jpg'
-import columbiariver from '../portfoliopics/columbiariver.jpg';
-import '../style/Home.css';
 
-var jumboStyle = {
-    margin: '0',
-    width: '100%',
-    height: '100%',
-    backgroundPosition: 'bottom',
-    backgroundImage: `url(${boats})`
-}
+import '../components/NavBar';
 
-var backgroundStyle = {
-    width: '100%',
-    height: '1000px',
-    backgroundPosition: 'center',
-    display: 'stretch',
-    backgroundImage: `url(${columbiariver})`
-};
-
-var introStyle = {
-    position: 'static', 
-    textAlign: 'center', 
-    marginTop: '20px', 
-    width: '100%',
-    borderRadius: '15px'
-}
+import clark from '../portfoliopics/profpic.jpg';
 
 class Home extends React.Component {
-    render() {
-        return (
-<div>
-<div className="jumbotron jumbotron-fluid" style={ jumboStyle }>
-   <div className="container">
-        <h1 className="display-4">Clark Lewis</h1>
-            <h2>I'm a Programmer</h2>
-                <Link exact to="/about-me" className="heroButton">
-                <AwesomeButton size="medium" type="secondary" className="aws-btn" style={{margin: '8px'}}>
-                    About Me
-                </AwesomeButton>
-                </Link>
-                <Link exact to="./photography" className="heroButton">
-                <AwesomeButton size="medium" type="secondary" className="aws-btn">
-                    Photography
-                </AwesomeButton>
-                </Link>    
-    </div>
-</div>
-<body style={ backgroundStyle }>
-    <div className="container" id="intro">
-    <div className="ui horizontal segment" id="introduction" style={ introStyle }>
-        <h4 className="introduction"><strong>Welcome to my website!</strong></h4>
-            <p className="mystory">My name is Clark Lewis and I am a programmer! This is my first site. 
-            I am looking for my first professional opportunity as a Web Developer.
-            I work with the Front End stack, mainly HTML, CSS,  and JavaScript, as well as work with the Framework React JS and Redux.
-            </p>
-            <Divider />
-            <p className="mystory">I have had interest in getting into programming for the last 3 years now. I have been in a career that I just wasn't passionate about, I saw myself at a dead-end. So at the end of 2019 I decided to give programming a try. I started with a free course and after a few months I decided to get a few more advanced courses to jump-start my learning. My short-term goal is to take on a Web Developer or Front-End Developer position to develop myself as a programmer and build up my skillset.</p>
-    </div>
-    </div>
-</body>
-    <footer>
-        <div id="footer">
-            <a href="https://www.linkedin.com/in/clark-lewis" target="_blank" rel="noopener noreferrer" className="link">Connect with me on LinkedIn</a><br />
-            <a href="mailto:hello@clarkglewis.com" className="link">hello@clarkglewis.com</a>
-        </div>
-        <p className="copyright">&copy; Copyright 2020 | Clark Lewis</p>
-    </footer>
-        </div>
+       render() {
+       return (
+            <div>
+                <body>
+                    <section className="section-aboutme">
+                        <div classname="row">
+                            <div className=" col span-1-of-2 author-box">
+                                <figure className="author-pic">
+                                    <img src={clark} alt="clark" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col span-1-of-2 intro-box">
+                                <h2 className="intro-header">Hey there!</h2>
+                                    <p className="intro-text">My name is Clark Lewis and I am from the Pacific Northwest. A majority of my working life has been customer-oriented. I am a self-taught programmer. I work with the Front End stack, mainly HTML, CSS, and JavaScript, as well as work with the Framework React JS and Redux.
+                                    I have been coding since the end of 2019 and I love everything about it! I am actively looking for my first professional role as a Web Developer.
+                                    </p>
+                            </div>
+                        </div>
+                    </section>
+                </body>
+            </div>
         )
     };
 }
