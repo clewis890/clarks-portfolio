@@ -5,11 +5,14 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Contact from '../components/Contact';
 
+import "../style/index.css";
+
 import clark from '../portfoliopics/profpic.jpg';
 
 class Home extends React.Component {
         render() {
             return (
+                <div>
                 <body>
                     <Header />
                     <section className="section-aboutme">
@@ -30,9 +33,9 @@ class Home extends React.Component {
                         </div>
                     </section>
                     <Contact />
-                    <Footer />
                 </body>
-                 
+                    <Footer />
+                </div>
         )
     };
 }
