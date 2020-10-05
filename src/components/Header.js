@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import NavBar from './NavBar';
 
+import "../style/index.css";
+
 class Header extends React.Component {
     render() {
         return (

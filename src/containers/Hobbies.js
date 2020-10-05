@@ -8,11 +8,14 @@ import Contact from '../components/Contact';
 
 import yerbamate from '../portfoliopics/chimarrao.jpg';
 
+import "../style/index.css";
+
 
 class Hobbies extends React.Component {
     
     render() {
         return (
+            <div>
             <body>
                 <Header />
                 <section className="flex-container">
@@ -47,8 +50,9 @@ class Hobbies extends React.Component {
                     </div>
                 </section>
                <Contact />
-               <Footer />
                 </body>
+                <Footer />
+                </div>
             );
         }
     }

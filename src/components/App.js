@@ -22,11 +22,11 @@ class DynamicImport extends React.Component {
             .then((component) => {
                 this.setState({ 
                     component: component.default ? component.default : component
-                })
-            })
+                });
+            });
         }
 render() {
-    return this.props.children(this.state.component)
+    return this.props.children(this.state.component);
     }
 }
 

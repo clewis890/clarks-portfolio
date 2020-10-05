@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import "../style/index.css";
+
 class Contact extends React.Component {
     render() {
         return(

@@ -4,6 +4,9 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Contact from '../components/Contact';
 
+import "../style/index.css";
+
+
 class Projects extends React.Component { 
     render() {
         return (

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
 import { NavLink } from 'react-router-dom';
 
+import "../style/index.css";
+
 class NavBar extends Component {
     constructor() {
         super();
