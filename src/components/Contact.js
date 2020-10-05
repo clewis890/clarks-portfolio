@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Contact extends React.Component {
     render() {
@@ -10,7 +10,7 @@ class Contact extends React.Component {
                         <div className="contact-text">
                             <h2>Get in touch!</h2>
                                 <p>If you're looking for an eager, enthusiastic Web Developer to bring extra value to your company, I'm your guy!
-                                <br /> Reach out via <Link to="mailto:hello@clarkglewis.com" className="contactme">email</Link> or <Link to="http://www.linkedin.com/clark-lewis" className="contactme">LinkedIn</Link>. I look forward to working with you!</p>
+                                <br /> Reach out via <NavLink to="mailto:hello@clarkglewis.com" className="contactme">email</NavLink> or <NavLink to="http://www.linkedin.com/clark-lewis" className="contactme">LinkedIn</NavLink>. I look forward to working with you!</p>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import NavBar from './NavBar';
 
 class Header extends React.Component {
@@ -9,23 +9,24 @@ class Header extends React.Component {
                     <div className="socialmedia" >
                         <ul className="social-icons">
                             <li className="clark-social">
-                                <Link to="http://www.linkedin.com/clark-lewis">
+                                <NavLink to="http://www.linkedin.com/clark-lewis">
                                 <ion-icon name="logo-linkedin" className="icon-small"></ion-icon>
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="clark-social">
-                                <Link to="http://www.github.com/clewis890">
+                                <NavLink to="http://www.github.com/clewis890">
                                 <ion-icon name="logo-github" className="icon-small"></ion-icon>
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="clark-social">
-                                <Link to="mailto:hello@clarkglewis.com"><ion-icon name="mail-sharp" className="icon-small"></ion-icon>
-                                </Link>
+                                <NavLink to="mailto:hello@clarkglewis.com"><ion-icon name="mail-sharp" className="icon-small"></ion-icon>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
                     <div className="hero-text-box">
-                        <p>Hi, my name is Clark</p>
+                        <p>Hi, my name is Clark
+                            <br /></p>
                         <p>I'm a Web Developer</p>
                     </div>
                         <div className="navigation">

@@ -1,15 +1,13 @@
-import React, { Component, useState, useRef } from 'react';
+import React, { Component } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
-import { Link } from 'react-router-dom';
-
-
+import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
     constructor() {
-        super()
+        super();
         this.state = {
             open: false,
-            hideOrShowHamburgerDropDown: 'nav'
+            hideOrShowHamburgerDropDown: 'nav',
         };
     }
 
@@ -19,7 +17,7 @@ class NavBar extends Component {
 
     displayHamburgerMenu() {
         return (
-            <div>
+            <div className="burgers">
             <HamburgerMenu
                     isOpen={this.state.open}
                     menuClicked={this.handleClick.bind(this)}
@@ -29,7 +27,7 @@ class NavBar extends Component {
                     rotate={0}
                     color='#fff'
                     borderRadius={0}
-                    animationDuration={.7}
+                    animationDuration={0.5}
                 ></HamburgerMenu>
             </div>
         );
@@ -38,10 +36,10 @@ class NavBar extends Component {
     displayNavBar() {
         return (
             <ul className="main-nav">
-                <li><Link exact to="/" className="heroButton nav-link">Home</Link></li>
-                <li><Link exact to="/hobbies" className="heroButton nav-link">Hobbies</Link></li>
-                <li><Link exact to="/projects" className="heroButton nav-link">Projects</Link></li>
-                <li><Link exact to="mailto:hello@clarkglewis.com" className="heroButton nav-link">Contact</Link></li>
+                <li><NavLink exact to="/" className="heroButton nav-link">Home</NavLink></li>
+                <li><NavLink exact to="/hobbies" className="heroButton nav-link">Hobbies</NavLink></li>
+                <li><NavLink exact to="/projects" className="heroButton nav-link">Projects</NavLink></li>
+                <li><NavLink exact to="mailto:hello@clarkglewis.com" className="heroButton nav-link">Contact</NavLink></li>
             </ul>
         )
     }
@@ -49,10 +47,10 @@ class NavBar extends Component {
     displayMobileMenu() {
         return (
             <ul className="hamburgerDropDown">
-                <li><Link exact to="/" className="heroButton mobile-link">Home</Link></li>
-                <li><Link exact to="/hobbies" className="heroButton mobile-link">Hobbies</Link></li>
-                <li><Link exact to="/projects" className="heroButton mobile-link">Projects</Link></li>
-                <li><Link exact to="mailto:hello@clarkglewis.com" className="heroButton mobile-link">Contact</Link></li>
+                <li><NavLink exact to="/" className="heroButton mobile-link">Home</NavLink></li>
+                <li><NavLink exact to="/hobbies" className="heroButton mobile-link">Hobbies</NavLink></li>
+                <li><NavLink exact to="/projects" className="heroButton mobile-link">Projects</NavLink></li>
+                <li><NavLink exact to="mailto:hello@clarkglewis.com" className="heroButton mobile-link">Contact</NavLink></li>
             </ul>
         )
     }
@@ -61,10 +59,12 @@ class NavBar extends Component {
         return (
             <div className="navbar">
                 { this.state.open ? this.displayMobileMenu() : null }
-                { window.innerWidth > 1100 ? this.displayNavBar() : this.displayHamburgerMenu()}
+                { window.innerWidth > 1400 ? this.displayNavBar() : this.displayHamburgerMenu()}
             </div>
         )
     }
 };
+
+// Hamburger Menu credits go to Zac Willington
 
 export default NavBar;

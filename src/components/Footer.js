@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Footer extends React.Component {
     render() {
@@ -8,14 +8,14 @@ class Footer extends React.Component {
             <div className="row row-footer">
                 <div className="col span-1-of-2 footer-box">
                     <ul className="footer-nav">
-                        <li className="footer-item"><Link exact to="/">Home</Link></li>
-                        <li className="footer-item"><Link exact to="/hobbies">Hobbies</Link></li>
-                        <li className="footer-item"><Link exact to="/projects">Projects</Link></li>
-                        <li className="footer-item"><Link to="mailto:hello@clarkglewis.com">Contact</Link></li>
+                        <li className="footer-item"><NavLink exact to="/">Home</NavLink></li>
+                        <li className="footer-item"><NavLink exact to="/hobbies">Hobbies</NavLink></li>
+                        <li className="footer-item"><NavLink exact to="/projects">Projects</NavLink></li>
+                        <li className="footer-item"><NavLink to="mailto:hello@clarkglewis.com">Contact</NavLink></li>
                     </ul>
                 </div>
             </div>
-            <div className="row copyright">
+            <div className="row row-copyright">
                 <div className="col span-1-of-2 copyright-box">
                     <p className="copyright-text">
                     Copyright &copy; 2020 by Clark Lewis
