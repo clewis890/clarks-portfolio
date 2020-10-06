@@ -18,7 +18,7 @@ header {
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url(../portfoliopics/island.jpg);
     background-size: 100% 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
@@ -532,6 +532,7 @@ section.section-contact-me {
     background-size: auto;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex; 
     align-items: center;
     justify-content: center;
