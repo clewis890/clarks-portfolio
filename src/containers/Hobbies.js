@@ -18,7 +18,7 @@ class Hobbies extends React.Component {
                         <div className="col span-1-of-2 photo-box">
                             <h2 className="intro-header">Photography</h2>
                                 <div className="intro-text">
-                                    <p>I enjoy taking pictures wherever I go. I take my pictures with the iPhone XR. From time to time I will be rotating out the pictures I have on display here!
+                                    <p>I enjoy taking pictures wherever I go. I take my pictures with the iPhone XR. From time to time I will be rotating out the pictures I have on display here. Feel free to click or swipe on the pictures!
                                     </p>
                                 </div>
                         </div>
@@ -39,7 +39,7 @@ class Hobbies extends React.Component {
                         <div className="col span-1-of-2 yerba-box">
                         <h2 className="yerba-header-2">Yerba Mate</h2> 
                         <div className="yerba-text">
-                            <p>On my first trip to Brazil in 2010, I was introduced to yerba mate (Chimarrao). Safe to say, I got hooked. The culture that surrounds Yerba Mate is very intriguing to me and last year, I got to travel to where it is grown and produced in Brazil. I even got to see the production side of it. A friend of mine and I even started a podcast about Yerba Mate (the only podcast about Yerba Mate in the English language!). <Link to="http://www.mateguys.com" className="mateguys-link">The Mate Guys Podcast</Link></p>
+                            <p>On my first trip to Brazil in 2010, I was introduced to yerba mate (Chimarrao). Safe to say, I got hooked. The culture that surrounds Yerba Mate is very intriguing to me and I am constantly informing myself with the latest news in the mate industry A friend of mine and I even started a the only podcast about Yerba Mate in the English language. <Link to="http://www.mateguys.com" className="mateguys-link">The Mate Guys Podcast</Link></p>
                         </div>
                         </div>
                     </div>
