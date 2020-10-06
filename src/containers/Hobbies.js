@@ -2,10 +2,6 @@ import React from 'react';
 import PhotoGallery from '../components/PhotoGallery';
 import { Link } from 'react-router-dom';
 
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Contact from '../components/Contact';
-
 import yerbamate from '../portfoliopics/chimarrao.jpg';
 
 import "../style/index.css";
@@ -17,7 +13,6 @@ class Hobbies extends React.Component {
         return (
             <div>
             <body>
-                <Header />
                 <section className="flex-container">
                     <div className="row">
                         <div className="col span-1-of-2 photo-box">
@@ -49,9 +44,7 @@ class Hobbies extends React.Component {
                         </div>
                     </div>
                 </section>
-               <Contact />
                 </body>
-                <Footer />
                 </div>
             );
         }

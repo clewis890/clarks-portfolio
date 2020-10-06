@@ -1,10 +1,6 @@
 import React from 'react';
 import '../components/NavBar';
 
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Contact from '../components/Contact';
-
 import "../style/index.css";
 
 import clark from '../portfoliopics/profpic.jpg';
@@ -14,7 +10,6 @@ class Home extends React.Component {
             return (
                 <div>
                 <body>
-                    <Header />
                     <section className="section-aboutme">
                         <div classname="row">
                             <div className=" col span-1-of-2 author-box">
@@ -32,9 +27,7 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </section>
-                    <Contact />
                 </body>
-                    <Footer />
                 </div>
         )
     };

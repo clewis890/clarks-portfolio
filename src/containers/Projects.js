@@ -1,9 +1,5 @@
 import React from 'react';
 
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Contact from '../components/Contact';
-
 import "../style/index.css";
 
 
@@ -12,7 +8,6 @@ class Projects extends React.Component {
         return (
             <div>
                 <body>
-                    <Header />
                     <section className="section-projects">
                         <div classname="row">
                             </div>
@@ -25,9 +20,7 @@ class Projects extends React.Component {
                                 </div>
                             </div>
                         </section>
-                        <Contact />
                     </body>
-                    <Footer />
             </div>  
         )
     };
