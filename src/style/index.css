@@ -380,23 +380,23 @@ img .pic-gallery {
 }
 
 button.slick-arrow.slick-prev {
-    color: #000;
+    color: #fff;
     z-index: 9999;
 }
 
 .slick-prev:before {
     margin-left: 1.3em;
     z-index: 9999;
-    color: #000;
+    color: #fff;
 }
 button.slick-arrow.slick-next {
-    color: #000;
+    color: #fff;
     z-index: 9999;
 }
 
 .slick-next:before {
     z-index: 9999;
-    color: #000;
+    color: #fff;
     position: relative;
     right: 1.3em;
 }

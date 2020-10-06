@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import "../style/index.css";
 
@@ -41,7 +41,7 @@ class NavBar extends Component {
                 <li><NavLink exact to="/" className="heroButton nav-link">Home</NavLink></li>
                 <li><NavLink exact to="/hobbies" className="heroButton nav-link">Hobbies</NavLink></li>
                 <li><NavLink exact to="/projects" className="heroButton nav-link">Projects</NavLink></li>
-                <li><NavLink exact to="mailto:hello@clarkglewis.com" className="heroButton nav-link">Contact</NavLink></li>
+                <li><Link exact to="mailto:hello@clarkglewis.com" className="heroButton nav-link">Contact</Link></li>
             </ul>
         )
     }
