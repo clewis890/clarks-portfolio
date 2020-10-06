@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 
 import "../style/index.css";
@@ -21,7 +21,8 @@ class Header extends React.Component {
                                 </Link>
                             </li>
                             <li className="clark-social">
-                                <Link to="mailto:hello@clarkglewis.com"><ion-icon name="mail-sharp" className="icon-small"></ion-icon>
+                                <Link to="mailto:hello@clarkglewis.com">
+                                    <ion-icon name="mail-sharp" className="icon-small"></ion-icon>
                                 </Link>
                             </li>
                         </ul>

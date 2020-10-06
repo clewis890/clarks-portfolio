@@ -35,6 +35,24 @@ class NavBar extends Component {
         );
     }
 
+    displayDesktopHamburgerMenu() {
+        return (
+            <div className="burgers">
+            <HamburgerMenu
+                    isOpen={this.state.open}
+                    menuClicked={this.handleClick.bind(this)}
+                    width={20}
+                    height={15}
+                    strokeWidth={1}
+                    rotate={0}
+                    color='#fff'
+                    borderRadius={0}
+                    animationDuration={0.5}
+                ></HamburgerMenu>
+            </div>
+        );
+    }
+
     displayNavBar() {
         return (
             <ul className="main-nav">
@@ -61,7 +79,8 @@ class NavBar extends Component {
         return (
             <div className="navbar">
                 { this.state.open ? this.displayMobileMenu() : null }
-                { window.innerWidth > 1400 ? this.displayNavBar() : this.displayHamburgerMenu()}
+                {/* { window.innerWidth > 1400 ? this.displayNavBar() : this.displayHamburgerMenu()} */}
+                { window.innerWidth > 767 ? this.displayDesktopHamburgerMenu() : this.displayHamburgerMenu()}
             </div>
         )
     }
