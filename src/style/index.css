@@ -532,6 +532,7 @@ section.section-contact-me {
     background-size: auto;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex; 
     align-items: center;
     justify-content: center;

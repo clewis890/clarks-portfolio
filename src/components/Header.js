@@ -11,7 +11,7 @@ class Header extends React.Component {
                     <div className="socialmedia" >
                         <ul className="social-icons">
                             <li className="clark-social">
-                                <NavLink to="http://www.linkedin.com/clark-lewis">
+                                <NavLink to="http://www.linkedin.com/in/clark-lewis">
                                 <ion-icon name="logo-linkedin" className="icon-small"></ion-icon>
                                 </NavLink>
                             </li>
