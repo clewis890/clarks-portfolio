@@ -231,7 +231,6 @@ ul.hamburgerDropDown {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    display: block;
     overflow: hidden;
 }
 
@@ -483,10 +482,6 @@ div.yerba-text {  text-align: center; }
 /*-------------------------------*/
 
 .section-projects {
-    /* background-image: url("https://images.unsplash.com/photo-1593505681742-8cbb6f44de25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     height: auto;
     overflow: hidden;
@@ -502,20 +497,6 @@ h2.project-header {
     display: block;
     margin: auto;
     color: #325a76;
-
-    /* color: #05080b; */
-    /* border-radius: 15px; */
-    /* border: 2px solid #05080b; */
-    /* background-color: #fff; */
-    /* -webkit-border-radius: 15px;
-    15pxborder: 2px solid #000;
-    -moz-border-radius: 15px;
-    15pxborder: 2px solid #000;
-    -ms-border-radius: 15px;
-    15pxborder: 2px solid #000;
-    -o-border-radius: 15px;
-    15pxborder: 2px solid #000;
-    */
 } 
 
 .project-header { width: 80%; }
@@ -523,18 +504,10 @@ h2.project-header {
 .project-text { width: 40%; }
 
 p.project-text {
-    /* color: #05080b;
-    background-color: #fff;
-    border-radius: 15px;
-    border: 2px solid #05080b; */
     display: flex;
     align-self: center;
     max-width: 80%;
     margin: 10% auto;
-    /* -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px; */
 }
 
 .row p.project-text { 
@@ -569,7 +542,6 @@ section.section-contact-me {
 .contact-box {
     justify-content: center;
     top: 40%;
-    position: absolute;
     z-index: 0;
     margin: 0 2%;
     height: auto;
@@ -638,9 +610,10 @@ section.section-contact-me {
 
 footer {
     width: 100%;
-    display: flex;
+    display: flex !important;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: inherit;
     position: relative;
     background-color: #1e3546;
     height: auto;
@@ -667,10 +640,10 @@ footer {
 }
 
 .footer-nav {
-    align-items: center;
     text-align: center;
     top: 0%;
     display: flex;
+    align-items: center;
     flex-direction: row;
     max-width: 100%;
     list-style: none;
@@ -679,7 +652,7 @@ footer {
 }
 
 .footer-nav li {
-    font-size: 45%;
+    font-size: 55%;
 }
 
 div.row.row-footer,
