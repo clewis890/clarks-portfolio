@@ -403,7 +403,7 @@ button.slick-arrow.slick-next {
 
 .slick-prev:before, 
 .slick-next:before {
-    color: #000;
+    color: #fff;
     opacity: 1;
 }
 
@@ -686,6 +686,7 @@ div.row.row-copyright {
 
 
 @media only screen and (min-width: 500px) {
+
     .hero-text-box {
     top: 60%;
     left: 50%;
@@ -711,19 +712,43 @@ div.row.row-copyright {
         display: flex;
     }
 
-    .slider-gallery {
-        width: 27em;
-    }
+    .slider-gallery { width: 27em; }
 
-    .slider-gallery img {
-        height: 14em;
-        
-    }
+    .slider-gallery img { height: 14em; }
 
     .footer-box ul {
         font-size: 120%;
         max-width: 100%;
         justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .flex-container {
+        margin-bottom: 5%;
+    }
+
+    div.photo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.photo-box:last-child { margin-right: 5%; }
+
+    div.yerba-box {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    div.yerba-box:last-child { margin-right: 5% }
+
+    div.slider-gallery {
+        width: 95%;
+        margin: auto;
     }
 }
 
@@ -746,6 +771,7 @@ div.row.row-copyright {
         height: auto;
         width: 100%;
     }
+
     div.author-box { 
         position: absolute; 
         top: 3em;
@@ -764,11 +790,11 @@ div.row.row-copyright {
         border-radius: 50%;
         margin: 0;
         object-fit: fill;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-    }
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+}
     
     figure.author-pic img {
         margin: 0;
@@ -776,11 +802,11 @@ div.row.row-copyright {
         width: 8em;
         border-radius: 50%;
         object-fit: cover;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-    }
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+}
     
     .intro-box {
         height: auto;
@@ -922,7 +948,7 @@ div.row.row-copyright {
             -o-border-radius: 15px;
         }
        
-        h2.intro-header { font-size: 280%; }
+        h2.intro-header { font-size: ; }
         
         .intro-box { margin-top: 25%; }
 
