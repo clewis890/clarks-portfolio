@@ -13,7 +13,7 @@ class Contact extends React.Component {
                         <div className="contact-text">
                             <h2>Get in touch!</h2>
                                 <p>I'm eager, enthusiastic, and hard working. I'm actively looking for my first position as a Web Developer, and am always looking for projects for my portfolio! Feel free to reach out if you need help building a site or even if you just have a question!
-                                <br /> Reach out via <NavLink to="mailto:hello@clarkglewis.com" className="contactme">email</NavLink> or <NavLink to="http://www.linkedin.com/in/clark-lewis" className="contactme">LinkedIn</NavLink>. I look forward to working with you!</p>
+                                <br /> Reach out via <a href="mailto:hello@clarkglewis.com" className="contactme">email</a> or <a href="http://www.linkedin.com/in/clark-lewis" className="contactme">LinkedIn</a>. I look forward to working with you!</p>
                         </div>
                     </div>
                 </div>
