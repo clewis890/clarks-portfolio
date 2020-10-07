@@ -1,20 +1,21 @@
 import React, { Suspense } from 'react';
-import PhotoGallery from '../components/PhotoGallery';
 import { Link } from 'react-router-dom';
+import LoadingSpinner from '../components/LoadingSpinner';
+import PhotoGallery from '../components/PhotoGallery';
 import yerbamate from '../portfoliopics/chimarrao.jpg';
 import "../style/index.css";
 import "../style/responsive.css";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const Header = React.lazy(() => import('../components/Header'));
 const Contact = React.lazy(() => import('../components/Contact'));
 const Footer = React.lazy(() => import('../components/Footer'));
 
 class Hobbies extends React.Component {
-    
     render() {
         return (
             <div>
-                <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
             <Header />
             <body>
                 <section className="flex-container">
@@ -50,11 +51,11 @@ class Hobbies extends React.Component {
                 </section>
                 <Contact />
                 <Footer />
-                </body>
-                </Suspense>
-                </div>
-            );
-        }
+            </body>
+            </Suspense>
+            </div>
+        );
     }
+}
 
 export default Hobbies;

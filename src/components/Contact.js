@@ -18,7 +18,7 @@ class Contact extends React.Component {
                     </div>
                 </div>
             </section>
-        )
+        );
     }
 }
 
