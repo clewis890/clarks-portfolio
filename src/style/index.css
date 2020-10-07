@@ -15,13 +15,14 @@ body {
 /*-------------------------*/
 
 header {
+    max-width: 100%;
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url(../portfoliopics/island.jpg);
-    background-size: 100% 100%;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 70vh;
 }
 
 div.socialmedia {
@@ -72,7 +73,7 @@ div.hero-text-box {
 .hero-text-box {
     position: absolute;
     width: 1140px;
-    top: 55%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -75%);
     -webkit-transform: translate(-50%, -75%);
@@ -83,8 +84,8 @@ div.hero-text-box {
 
 .hero-text-box p {
     font-weight: normal;
-    font-size: 150%;
-    margin: 1.5% 0  3% 0;
+    font-size: 130%;
+    margin: 1.5% 0  3.5% 0;
     color: #fdfefe;
     text-align: center;
 }
@@ -375,8 +376,8 @@ img .pic-gallery {
 }
 
 .slider-gallery {
-    max-width: 100%;
-    margin-top: 0; 
+    max-width: 90%;
+    margin: auto;
 }
 
 button.slick-arrow.slick-prev {
@@ -523,7 +524,7 @@ p.project-text {
 /*-------------------------------*/
 
 section.section-contact-me {
-    height: 100vh;
+    height: 65vh;
     max-width: 100%;
     position: relative;
     color: #fff;
@@ -711,7 +712,7 @@ div.row.row-copyright {
         display: flex;
     }
 
-    .slider-gallery { width: 27em; }
+    .slider-gallery { width: 85%; }
 
     .slider-gallery img { height: 14em; }
 
@@ -762,7 +763,7 @@ div.row.row-copyright {
 
 
     div.slider-gallery {
-        width: 95%;
+        width: 85%;
         margin: auto;
     }
 
@@ -773,7 +774,16 @@ div.row.row-copyright {
 
 /* Tablets 768px and up */
 @media only screen and (min-width: 768px) {
-    
+    header {
+        background-position: bottom;
+        height: 100vh;
+    }
+
+    .hero-text-box {
+        top: 66%;
+        left: 50%;
+    }
+
     ul.hamburgerDropDown { margin-left: 8%; }
     
     .hamburgerDropDown li {
@@ -915,19 +925,7 @@ div.row.row-copyright {
 /* Desktops 992px and up */
 @media only screen and (min-width: 992px) {
 
-    header {
-        height: 50vh;
-    }
-    
-    .hero-text-box {
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -70%);
-        -webkit-transform: translate(-50%, -70%);
-        -moz-transform: translate(-50%, -70%);
-        -ms-transform: translate(-50%, -70%);
-        -o-transform: translate(-50%, -70%);
-    }
+   
     
     .hero-text-box p { font-size: 180%; }
     
@@ -1001,7 +999,7 @@ div.row.row-copyright {
             width: 12em;           
         }
 
-        div.slider-gallery { width: 95%; }
+        div.slider-gallery { width: 400px; }
     
         section.section-contact-me {
             height: 50vh;
@@ -1085,7 +1083,7 @@ div.row.row-copyright {
 
     div.slider-gallery { 
         height: auto;
-        width: 100%;
+        width: 75%;
     }
 
     .yerba-box:last-child {

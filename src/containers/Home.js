@@ -1,8 +1,6 @@
 import React, { Suspense } from 'react';
 import '../components/NavBar';
-
 import "../style/index.css";
-
 import clark from '../portfoliopics/profpic.jpg';
 
 const Header = React.lazy(() => import('../components/Header'));
