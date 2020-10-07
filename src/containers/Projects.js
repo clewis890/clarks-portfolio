@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import "../style/index.css";
 
+const Header = React.lazy(() => import('../components/Header'));
+const Contact = React.lazy(() => import('../components/Contact'));
+const Footer = React.lazy(() => import('../components/Footer'));
 
 class Projects extends React.Component { 
     render() {
         return (
             <div>
+                <Suspense fallback={<div>Loading...</div>}>
                 <body>
+                <Header />
                     <section className="section-projects">
                         <div classname="row">
                             </div>
@@ -20,7 +25,10 @@ class Projects extends React.Component {
                                 </div>
                             </div>
                         </section>
+                        <Contact />
+                        <Footer />
                     </body>
+                    </Suspense>
             </div>  
         )
     };

@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import '../components/NavBar';
 
 import "../style/index.css";
 
 import clark from '../portfoliopics/profpic.jpg';
 
+const Header = React.lazy(() => import('../components/Header'));
+const Contact = React.lazy(() => import('../components/Contact'));
+const Footer = React.lazy(() => import('../components/Footer'));
+
 class Home extends React.Component {
         render() {
             return (
                 <div>
+                <Suspense fallback={<div>Loading...</div>}>
                 <body>
+                    <Header />
                     <section className="section-aboutme">
                         <div classname="row">
                             <div className=" col span-1-of-2 author-box">
@@ -27,7 +33,10 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </section>
+                    <Contact />
+                    <Footer />
                 </body>
+                </Suspense>
                 </div>
         )
     };
