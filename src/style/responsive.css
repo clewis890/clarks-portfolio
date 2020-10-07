@@ -347,9 +347,8 @@
 
     .contact-box p {
         width: 80%;
-        margin: auto auto 3% auto;
+        margin: 0 15%;
     }
-
 }
 
 /* Large Desktops 1200px and up */
@@ -442,4 +441,12 @@
         height: 22em;
         width: 22em;
     }
+
+    .contact-box { margin: 0 15%; }
+
+    .contact-box p { font-size: 110%; }
+
+    .contact-box h2 { font-size: 230%; }
+    
+   
 }
