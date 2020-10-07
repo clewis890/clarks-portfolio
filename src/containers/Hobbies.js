@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import PhotoGallery from '../components/PhotoGallery';
 import { Link } from 'react-router-dom';
 
@@ -6,12 +6,18 @@ import yerbamate from '../portfoliopics/chimarrao.jpg';
 
 import "../style/index.css";
 
+const Header = React.lazy(() => import('../components/Header'));
+const Contact = React.lazy(() => import('../components/Contact'));
+const Footer = React.lazy(() => import('../components/Footer'));
+
 
 class Hobbies extends React.Component {
     
     render() {
         return (
             <div>
+                <Suspense fallback={<div>Loading...</div>}>
+            <Header />
             <body>
                 <section className="flex-container">
                     <div className="row">
@@ -44,7 +50,10 @@ class Hobbies extends React.Component {
                         </div>
                     </div>
                 </section>
+                <Contact />
+                <Footer />
                 </body>
+                </Suspense>
                 </div>
             );
         }

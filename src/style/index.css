@@ -19,7 +19,7 @@ header {
     background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url(../portfoliopics/island.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
     height: 100vh;
 }
@@ -318,7 +318,7 @@ p.intro-text {
     display: flex;
     align-self: center;
     max-width: 80%;
-    margin: 10% auto;
+    margin: 5% auto;
     
 }
 
@@ -537,7 +537,6 @@ section.section-contact-me {
     align-items: center;
     justify-content: center;
     z-index: 0;
-
 }
 
 .contact-box {
@@ -683,7 +682,7 @@ div.row.row-copyright {
 /*-----Responsive Design------*/
 /*----------------------------*/
 
-
+/* Medium sized phones 500px and up */
 
 @media only screen and (min-width: 500px) {
 
@@ -723,7 +722,7 @@ div.row.row-copyright {
     }
 }
 
-/* */
+/* Large Phones and Landscape Mode 576px and up */
 @media only screen and (min-width: 576px) {
 
     ul.hamburgerDropDown { margin-left: 8%; }
@@ -732,6 +731,8 @@ div.row.row-copyright {
         line-height: 1.4em;
         font-size: 100%;
     }
+
+    p.intro-text { margin-top: 1%; }
 
     .flex-container {
         margin-bottom: 5%;
@@ -744,7 +745,7 @@ div.row.row-copyright {
         justify-content: center;
     }
 
-    div.photo-box:last-child { margin-right: 5%; }
+    div.photo-box:last-child { margin-right: 0%; }
 
     h2.yerba-header-1 { margin-bottom: 15%; }
 
@@ -859,8 +860,9 @@ div.row.row-copyright {
         display: flex;
         align-self: center;
         justify-content: center;
-        max-width: 100%;
+        max-width: 80%;
         margin-bottom: 0%;
+        margin-top: 1%;
     }
     
     .row p.intro-text { width: 100%; }
@@ -888,6 +890,7 @@ div.row.row-copyright {
         align-items: center;
         justify-content: center;
     }
+    div.photo-box:last-child { margin-right: 5%; }
 
     div.slider-gallery { width: 95%; }
 
@@ -912,6 +915,10 @@ div.row.row-copyright {
 /* Desktops 992px and up */
 @media only screen and (min-width: 992px) {
 
+    header {
+        height: 50vh;
+    }
+    
     .hero-text-box {
         top: 55%;
         left: 50%;
@@ -976,10 +983,8 @@ div.row.row-copyright {
             -ms-border-radius: 15px;
             -o-border-radius: 15px;
         }
-       
-        h2.intro-header { font-size: ; }
-        
-        .intro-box { margin-top: 25%; }
+               
+        .intro-box { margin-top: 20%; }
 
         p.intro-text {
             max-width: 75%;
@@ -997,11 +1002,80 @@ div.row.row-copyright {
         }
 
         div.slider-gallery { width: 95%; }
-          
+    
+        section.section-contact-me {
+            height: 50vh;
+        }
     }
 
     /* Large Desktops 1200px and up */
 @media only screen and (min-width: 1200px) {
+    .section-aboutme {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.author-box { 
+        position: absolute; 
+        top: 4em;
+        left: 0em;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+    
+    figure.author-pic {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        border-radius: 50%;
+        margin: 0;
+        object-fit: fill;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    .intro-box {
+        height: auto;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 15em;
+    }
+    
+    h2.intro-header {
+        max-width: 100%;
+        flex-grow: auto;
+        font-size: 230%;
+        display: block;
+        margin-bottom: 5%;
+        color: #325a76;
+    }
+    
+    p.intro-text {
+        display: flex;
+        align-self: center;
+        max-width: 80%;
+        margin: 5% auto;
+    }
+    
+    .row p.intro-text { 
+        line-height: 1.8rem; 
+        text-align: center;
+        align-items: center;
+        display: block;
+    }
+    
     div.photo-box {
         display: flex;
         flex-direction: column;
@@ -1013,7 +1087,6 @@ div.row.row-copyright {
         height: auto;
         width: 100%;
     }
-
 
     .yerba-box:last-child {
         display: flex;
