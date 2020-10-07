@@ -14,7 +14,7 @@ class Footer extends React.Component {
                             <li className="footer-item"><NavLink exact to="/">Home</NavLink></li>
                             <li className="footer-item"><NavLink exact to="/hobbies">Hobbies</NavLink></li>
                             <li className="footer-item"><NavLink exact to="/projects">Projects</NavLink></li>
-                            <li className="footer-item"><Link to="mailto:hello@clarkglewis.com">Contact</Link></li>
+                            <li className="footer-item"><a href="mailto:hello@clarkglewis.com">Contact</a></li>
                         </ul>
                     </div>
                 </div>
