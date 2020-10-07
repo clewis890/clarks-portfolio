@@ -1,0 +1,437 @@
+/*----------------------------*/
+/*-----Responsive Design------*/
+/*----------------------------*/
+
+/* Medium sized phones 500px and up */
+
+@media only screen and (min-width: 500px) {
+
+    .hero-text-box {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        -webkit-transform: translate(-50%, -70%);
+        -moz-transform: translate(-50%, -70%);
+        -ms-transform: translate(-50%, -70%);
+        -o-transform: translate(-50%, -70%);
+}
+
+    .hero-text-box p { font-size: 170%; }
+
+    p.intro-text { margin-bottom: 0%; }
+
+    .photo-box:first-child {
+        margin: 0 2%;
+        text-align: center;
+    }
+
+    .photo-box:last-child {
+        margin-top: 5%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .slider-gallery { width: 85%; }
+
+    .slider-gallery img { height: 14em; }
+
+    .footer-box ul {
+        font-size: 120%;
+        max-width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+/* Large Phones and Landscape Mode 576px and up */
+@media only screen and (min-width: 576px) {
+
+    header {
+        background-position: bottom;
+        background-size: auto;
+        height: 100vh;
+    }
+
+    .hero-text-box { top: 66%; }
+
+    ul.hamburgerDropDown { margin-left: 8%; }
+
+    .hamburgerDropDown li {
+        line-height: 1.4em;
+        font-size: 100%;
+    }
+
+    p.intro-text { margin-top: 1%; }
+
+    .flex-container { margin-bottom: 5%; }
+
+    div.photo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.photo-box:last-child { margin-right: 0%; }
+
+    h2.yerba-header-1 { margin-bottom: 15%; }
+
+    div.yerba-box {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    div.yerba-box:last-child {
+        margin-bottom: 10%;
+        margin-right: 5%;
+    }
+
+
+    div.slider-gallery {
+        width: 85%;
+        margin: auto;
+    }
+
+    div.hamburgers { width: 25px; }
+}
+
+/* Tablets 768px and up */
+@media only screen and (min-width: 768px) {
+
+    header {
+        background-position: bottom;
+        background-size: auto;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+
+    .hero-text-box {
+        top: 66%;
+        left: 50%;
+    }
+
+    ul.hamburgerDropDown { margin-left: 8%; }
+
+    .hamburgerDropDown li {
+        line-height: 1.4em;
+        font-size: 110%;
+    }
+
+    .section-aboutme {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.author-box {
+        position: absolute;
+        top: 1.5em;
+        left: 0em;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    div.author-box {
+        position: absolute;
+        top: 3em;
+        left: 0em;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    figure.author-pic {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        border-radius: 50%;
+        margin: 0;
+        object-fit: fill;
+        -webkit-border-radius: ;
+        -moz-border-radius: ;
+        -ms-border-radius: ;
+        -o-border-radius: ;
+    }
+
+    figure.author-pic img {
+        margin: 0;
+        height: 8em;
+        width: 8em;
+        border-radius: 50%;
+        object-fit: cover;
+        -webkit-border-radius: ;
+        -moz-border-radius: ;
+        -ms-border-radius: ;
+        -o-border-radius: ;
+    }
+
+    .intro-box {
+        height: auto;
+        display: block;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        top: 0;
+    }
+
+    h2.intro-header {
+        max-width: 100%;
+        flex-grow: auto;
+        font-size: 230%;
+        display: block;
+        margin-bottom: 5%;
+        color: #325a76;
+    }
+
+    div.intro-text { align-self: center; }
+
+    p.intro-text {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        max-width: 80%;
+        margin-bottom: 0%;
+        margin-top: 1%;
+    }
+
+    .row p.intro-text { width: 100%; }
+
+    .yerba-text p,
+    .intro-text p {
+        width: 90%;
+        margin: auto;
+    }
+
+    h2.yerba-header-1 { display: none; }
+
+    h2.yerba-header-2 {
+        max-width: 100%;
+        flex-grow: auto;
+        font-size: 230%;
+        display: block;
+        margin-bottom: 5%;
+        color: #325a76;
+    }
+
+    div.photo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.photo-box:last-child { margin-right: 5%; }
+
+    div.slider-gallery { width: 95%; }
+
+    .yerba-box:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yerba-pic img {
+        height: 18em;
+        width: 18em;
+    }
+
+    .flex-container:last-child { margin-bottom: 50px; }
+
+    section.section-contact-me { background-attachment: fixed; }
+
+    .contact-box:before {
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .contact-box {
+        justify-content: center;
+        top: 40%;
+        z-index: 0;
+        margin: 0 8%;
+        height: auto;
+        max-width: 100%;
+        color: #fff;
+        padding: 3%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
+        overflow: hidden;
+    }
+
+    .footer-nav li { font-size: 45%; }
+
+    footer .row p { font-size: 95%; }
+}
+
+/* Desktops 992px and up */
+@media only screen and (min-width: 992px) {
+
+    .hero-text-box p { font-size: 180%; }
+
+    div.navigation {
+        display: flex;
+        position: absolute;
+    }
+
+    div.navbar {
+        position: relative;
+        width: 100%;
+    }
+
+    ul.hamburgerDropDown {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: fit-content;
+        margin-bottom: -5%;
+        margin-left: 8%;
+        padding: 5px;
+    }
+
+    .hamburgerDropDown li {
+        width: fit-content;
+        padding: 0;
+        list-style: none;
+        line-height: 1.5em;
+        font-size: 125%;
+    }
+
+    ul.main-nav {
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        text-align: center;
+        list-style: none;
+        position: fixed;
+    }
+
+    .main-nav li {
+        z-index: 9999;
+        font-size: 100%;
+        margin-bottom: ;
+        margin-right: 0%;
+        padding: 1% 7%;
+    }
+
+    .intro-box { margin-top: 20%; }
+
+    p.intro-text {
+        max-width: 75%;
+        margin: auto;
+    }
+
+    .row p.intro-text {
+        line-height: 2.1rem;
+        margin: auto;
+    }
+
+    figure.author-pic img {
+        height: 12em;
+        width: 12em;
+    }
+
+    div.slider-gallery { width: 400px;
+    }
+
+    section.section-contact-me { height: 50vh; }
+}
+
+/* Large Desktops 1200px and up */
+@media only screen and (min-width: 1200px) {
+    
+    .section-aboutme {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.author-box {
+        position: absolute;
+        top: 4em;
+        left: 0em;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    figure.author-pic {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        border-radius: 50%;
+        margin: 0;
+        object-fit: fill;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .intro-box {
+        height: auto;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 15em;
+    }
+
+    h2.intro-header {
+        max-width: 100%;
+        flex-grow: auto;
+        font-size: 230%;
+        display: block;
+        margin-bottom: 5%;
+        color: #325a76;
+    }
+
+    p.intro-text {
+        display: flex;
+        align-self: center;
+        max-width: 80%;
+        margin: 5% auto;
+    }
+
+    .row p.intro-text {
+        line-height: 1.8rem;
+        text-align: center;
+        align-items: center;
+        display: block;
+    }
+
+    div.photo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.slider-gallery {
+        height: auto;
+        width: 75%;
+    }
+
+    .yerba-box:last-child {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .yerba-pic img {
+        height: 22em;
+        width: 22em;
+    }
+}

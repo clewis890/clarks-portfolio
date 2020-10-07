@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
-
 import "../style/index.css";
+import "../style/responsive.css";
 
 const Header = React.lazy(() => import('../components/Header'));
 const Contact = React.lazy(() => import('../components/Contact'));

@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import "../style/index.css";
+import "../style/responsive.css";
 
 class Contact extends React.Component {
     render() {
@@ -11,7 +12,7 @@ class Contact extends React.Component {
                     <div className="col span-1-of-2 contact-box">
                         <div className="contact-text">
                             <h2>Get in touch!</h2>
-                                <p>If you're looking for an eager, enthusiastic Web Developer to bring extra value to your company, I'm your guy!
+                                <p>I'm eager, enthusiastic, and hard working. I'm actively looking for my first position as a Web Developer, and am always looking for projects for my portfolio! Feel free to reach out if you need help building a site or even if you just have a question!
                                 <br /> Reach out via <NavLink to="mailto:hello@clarkglewis.com" className="contactme">email</NavLink> or <NavLink to="http://www.linkedin.com/in/clark-lewis" className="contactme">LinkedIn</NavLink>. I look forward to working with you!</p>
                         </div>
                     </div>

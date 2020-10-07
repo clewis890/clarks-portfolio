@@ -3,6 +3,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 import { NavLink, Link } from 'react-router-dom';
 
 import "../style/index.css";
+import "../style/responsive.css";
 
 class NavBar extends Component {
     constructor() {
