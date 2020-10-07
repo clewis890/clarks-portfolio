@@ -12,22 +12,19 @@ import Home from '../containers/Home';
 import Hobbies from '../containers/Hobbies';
 import Projects from '../containers/Projects';
 
-
-
-
 class App extends React.Component {
     render() {
         return (
             <Router history={history}>
                 <Switch>
                     <Route exact path='/' component={Home} />
-                    <Route path='/hobbies' component={Hobbies} />
-                    <Route path='/projects' component={Projects} />
+                    <Route path='/Hobbies' component={Hobbies} />
+                    <Route path='/Projects' component={Projects} />
                </Switch>
             </Router>
             );
         }
-}
+    }
 
 
 export default App;

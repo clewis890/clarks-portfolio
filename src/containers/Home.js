@@ -3,6 +3,7 @@ import '../components/NavBar';
 import "../style/index.css";
 import "../style/responsive.css";
 import clark from '../portfoliopics/profpic.jpg';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const Header = React.lazy(() => import('../components/Header'));
 const Contact = React.lazy(() => import('../components/Contact'));
@@ -12,7 +13,7 @@ class Home extends React.Component {
         render() {
             return (
                 <div>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingSpinner />}>
                 <body>
                     <Header />
                     <section className="section-aboutme">
@@ -26,7 +27,7 @@ class Home extends React.Component {
                         <div className="row">
                             <div className="col span-1-of-2 intro-box">
                                 <h2 className="intro-header">Hey there!</h2>
-                                    <p className="intro-text">My name is Clark Lewis and I am from the Pacific Northwest. A majority of my working life has been customer-oriented. I am a self-taught programmer. I work with the Front End stack, mainly HTML, CSS, and JavaScript, as well as work with the Framework React JS and Redux.
+                                    <p className="intro-text">My name is Clark Lewis and I am from the Pacific Northwest. I enjoy the outdoors, pizza, and actively re-watch TV series I've already finished a dozen times. A majority of my working life has been customer-oriented. I am a self-taught programmer. I work with the Front End stack, mainly HTML, CSS, and JavaScript, as well as work with the Framework React JS and Redux.
                                     I have been coding since the end of 2019 and I love everything about it! I am actively looking for my first professional role as a Web Developer.
                                     </p>
                             </div>
@@ -37,8 +38,8 @@ class Home extends React.Component {
                 </body>
                 </Suspense>
                 </div>
-        )
-    };
+            );
+        }
 }
 
 export default Home;

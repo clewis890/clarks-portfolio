@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import LoadingSpinner from '../components/LoadingSpinner';
 import "../style/index.css";
 import "../style/responsive.css";
 
@@ -10,7 +11,7 @@ class Projects extends React.Component {
     render() {
         return (
             <div>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingSpinner />}>
                 <body>
                 <Header />
                     <section className="section-projects">
@@ -24,14 +25,14 @@ class Projects extends React.Component {
                                     </p>
                                 </div>
                             </div>
-                        </section>
-                        <Contact />
-                        <Footer />
-                    </body>
-                    </Suspense>
+                    </section>
+                    <Contact />
+                    <Footer />
+                </body>
+                </Suspense>
             </div>  
-        )
-    };
+        );
+    }
 }
 
 export default Projects;
