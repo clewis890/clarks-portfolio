@@ -110,11 +110,11 @@
         left: 50%;
     }
 
-    ul.hamburgerDropDown { margin-left: 8%; }
+    ul.hamburgerDropDown { margin-left: 6%; }
 
     .hamburgerDropDown li {
         line-height: 1.4em;
-        font-size: 110%;
+        font-size: 125%;
     }
 
     .section-aboutme {
@@ -247,6 +247,7 @@
     section.section-contact-me { 
         height: 80vh;
         background-attachment: fixed; 
+        overflow: hidden;
     }
 
     .contact-box:before {
@@ -262,6 +263,7 @@
     }
 
     .contact-box p {
+        height: inherit;
         width: 70%;
         margin: auto auto 3% auto;
     }
@@ -269,6 +271,34 @@
     .footer-nav li { font-size: 45%; }
 
     footer .row p { font-size: 95%; }
+}
+
+
+
+@media only screen and (max-height: 540px) and (min-width: 768px) {
+    
+    header { 
+        width: 100vw;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: bottom;
+     }
+
+    .herot-text-box { 
+        top:  !important;   
+    }
+
+    .contact-box { margin: 0 5%; }
+    
+    .contact-box p {
+        width: 100%;
+        font-size: 104%;
+    }
+    .contact-box h2 { 
+        font-size: 190%;
+        margin-bottom: 1%;
+        padding: 1%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -287,21 +317,10 @@
         width: 100%;
     }
 
-    ul.hamburgerDropDown {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: fit-content;
-        margin-bottom: -5%;
-        margin-left: 8%;
-        padding: 5px;
-    }
+    ul.hamburgerDropDown { margin-left: 6%; }
 
     .hamburgerDropDown li {
-        width: fit-content;
-        padding: 0;
-        list-style: none;
-        line-height: 1.5em;
+        line-height: 1.4em;
         font-size: 125%;
     }
 
@@ -317,10 +336,7 @@
     }
 
     .main-nav li {
-        z-index: 9999;
         font-size: 100%;
-        margin-bottom: ;
-        margin-right: 0%;
         padding: 1% 7%;
     }
 
@@ -347,7 +363,32 @@
 
     .contact-box p {
         width: 80%;
-        margin: 0 15%;
+        margin: auto;
+    }
+    
+    .contact-box { margin: 0 14.5%; }
+
+    .contact-box p { font-size: 110%; }
+
+    .contact-box h2 { font-size: 230%; }
+}
+
+@media only screen and (max-height: 540px) and (min-width: 992px) {
+    
+    header { 
+        width: 100vw;
+        background-size: cover;
+    }
+
+    .contact-box { margin: 0 6%; }
+    
+    .contact-box p {
+        width: 100%;
+        font-size: 107%;
+        padding: 1%;
+    }
+    .contact-box h2 { 
+        padding: 1%;
     }
 }
 
