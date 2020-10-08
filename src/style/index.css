@@ -454,15 +454,16 @@ div.yerba-text { text-align: center; }
 }
 
 .mateguys-link {
+    font-style: oblique;
     text-decoration: none;
-    color: #000;
+    color: #0a0a0a;
 }
 
 .mateguys-link:link,
 .mateguys-link:visited {
     text-decoration: none;
     border: 0;
-    color: #000;
+    color: #191b47;
     transition: color 0.2s;
     -webkit-transition: color 0.2s;
     -moz-transition: color 0.2s;
@@ -471,7 +472,7 @@ div.yerba-text { text-align: center; }
 }
 
 .mateguys-link:hover,
-.mateguys-link:active { color: #44647a; }
+.mateguys-link:active { color: #85bde2; }
 
 .flex-container:last-child { margin-bottom: 20px; }
 
