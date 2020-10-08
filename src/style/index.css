@@ -378,6 +378,7 @@ img .pic-gallery {
 button.slick-arrow.slick-prev {
     color: #fff;
     z-index: 9999;
+    right: 1.3em;
 }
 
 .slick-prev:before {
@@ -387,6 +388,7 @@ button.slick-arrow.slick-prev {
 }
 
 button.slick-arrow.slick-next {
+    margin-left: 1.5em;
     color: #fff;
     z-index: 9999;
 }

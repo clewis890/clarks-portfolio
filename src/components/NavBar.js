@@ -24,7 +24,7 @@ class NavBar extends Component {
             <HamburgerMenu
                     isOpen={this.state.open}
                     menuClicked={this.handleClick.bind(this)}
-                    width={16}
+                    width={20}
                     height={13}
                     strokeWidth={1}
                     rotate={0}
@@ -42,7 +42,7 @@ class NavBar extends Component {
             <HamburgerMenu
                     isOpen={this.state.open}
                     menuClicked={this.handleClick.bind(this)}
-                    width={20}
+                    width={22}
                     height={15}
                     strokeWidth={1}
                     rotate={0}
