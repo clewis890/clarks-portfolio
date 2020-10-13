@@ -23,6 +23,11 @@ header {
     height: 70vh;
 }
 
+.loader {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
 
 div.socialmedia {
     justify-content: center;
@@ -371,39 +376,43 @@ img .pic-gallery {
 }
 
 .slider-gallery {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
 }
 
 button.slick-arrow.slick-prev {
-    color: #fff;
-    z-index: 9999;
-    right: 1.3em;
-}
-
-.slick-prev:before {
-    margin-left: 1.5em;
-    z-index: 9999;
-    color: #fff;
+    z-index: 500;
+    color: #fff !important;
 }
 
 button.slick-arrow.slick-next {
-    margin-left: 1.5em;
-    color: #fff;
-    z-index: 9999;
+    z-index: 1;
+    right: 1.3em;
+    color: #fff !important;
+
 }
 
-.slick-next:before {
-    z-index: 9999;
-    color: #fff;
+.slick-prev:before {
     position: relative;
-    right: 1.3em;
+    color: #fff !important;
+}
+
+.slick-prev:before,
+button.slick-arrow.slick-prev {
+    margin-left: 1.3em;
+}
+
+
+.slick-next:before {
+    color: #fff !important;
+    position: relative;
 }
 
 .slick-prev:before,
 .slick-next:before {
-    color: #fff;
+    color: #fff !important;
     opacity: 1;
+    z-index: 9999;
 }
 
 .photo-box:last-child { z-index: 0; }
@@ -588,14 +597,19 @@ section.section-contact-me {
     line-height: 1.8em;
     text-align: center;
     font-size: 95%;
+    
 }
 
+.contactme {
+    text-decoration: underline;
+}
 
 .contact-text p a:link,
 .contact-text p a:visited {
+    font-weight: 700;
     text-decoration: none;
     border: 0;
-    color: #fff;
+    color: #85bde2;
     transition: color 0.2s;
     -webkit-transition: color 0.2s;
     -moz-transition: color 0.2s;
@@ -604,7 +618,7 @@ section.section-contact-me {
 }
 
 .contact-text p a:hover,
-.contact-text p a:active { color: #86afcc; }
+.contact-text p a:active { color: #888; }
 
 /*----------------------------------*/
 /*--------------FOOTER--------------*/
