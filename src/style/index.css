@@ -604,12 +604,34 @@ section.section-contact-me {
     text-decoration: underline;
 }
 
+.contact-text button {
+    position: relative;
+    background-color:  #d4802c;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+button a { 
+    font-weight: lighter !important;
+    text-align: center;
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 100%;
+}
+
 .contact-text p a:link,
 .contact-text p a:visited {
     font-weight: 700;
     text-decoration: none;
     border: 0;
-    color: #85bde2;
+    color: #fff;
     transition: color 0.2s;
     -webkit-transition: color 0.2s;
     -moz-transition: color 0.2s;
@@ -618,7 +640,10 @@ section.section-contact-me {
 }
 
 .contact-text p a:hover,
-.contact-text p a:active { color: #888; }
+.contact-text p a:active { color: #e4e4e4; }
+
+.btn:hover,
+.btn:active { background-color: #d8842f; }
 
 /*----------------------------------*/
 /*--------------FOOTER--------------*/
@@ -680,10 +705,10 @@ div.row.row-copyright { margin: 0; }
     border: 0;
     color: #888888;
     transition: color 0.5s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
 }
 
 .footer-nav li a:hover,
