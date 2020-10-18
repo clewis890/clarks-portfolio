@@ -105,6 +105,16 @@
         height: 80vh;
     }
 
+    div.socialmedia {
+        top: 30%;
+        right: 4%;
+    }
+  
+    ion-icon {
+        height: 2.3rem;
+        width: 2.3rem;
+    }
+
     .hero-text-box {
         top: 77%;
         left: 50%;
@@ -394,7 +404,7 @@
 
 /* Large Desktops 1200px and up */
 @media only screen and (min-width: 1200px) {
-    
+  
     .section-aboutme {
         position: relative;
         height: auto;

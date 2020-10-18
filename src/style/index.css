@@ -53,10 +53,10 @@ ul .clark-social a:link,
 ul .clark-social a:visited {
     color: #4b87b2;
     transition: color .5s;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -ms-transition: color .5s;
-    -o-transition: color .5s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 ul .clark-social a:hover,
@@ -462,9 +462,6 @@ div.yerba-text { text-align: center; }
     align-items: center;
 }
 
-a.mateguys-link { border-bottom: 5px solid black;
-}
-
 .mateguys-link {
     font-style: oblique;
     text-decoration: none;
@@ -474,8 +471,7 @@ a.mateguys-link { border-bottom: 5px solid black;
 .mateguys-link:link,
 .mateguys-link:visited {
     text-decoration: none;
-    border-bottom: 1px solid rgb(14, 14, 14);
-    color: #ccbaba;
+    color: #4b87b2;
     transition: color 0.2s;
     -webkit-transition: color 0.2s;
     -moz-transition: color 0.2s;
@@ -484,7 +480,15 @@ a.mateguys-link { border-bottom: 5px solid black;
 }
 
 .mateguys-link:hover,
-.mateguys-link:active { color: #191b47; }
+.mateguys-link:active {
+    color: #191b47;
+    border-bottom: 1px solid black;
+    transition:  color 0.2s ease;
+    -webkit-transition:  color 0.2s ease;
+    -moz-transition:  color 0.2s ease;
+    -ms-transition:  color 0.2s ease;
+    -o-transition:  color 0.2s ease;
+}
 
 .flex-container:last-child { margin-bottom: 20px; }
 
