@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import ContactForm from '../components/ContactForm';
 
 import "../style/index.css";
 import "../style/responsive.css";
@@ -7,6 +8,7 @@ import "../style/responsive.css";
 class Contact extends React.Component {
     render() {
         return(
+            <div>
             <section className="section-contact-me">
                 <div className="row">
                     <div className="col span-1-of-2 contact-box">
@@ -19,6 +21,8 @@ class Contact extends React.Component {
                     </div>
                 </div>
             </section>
+            <ContactForm />    
+        </div>
         );
     }
 }

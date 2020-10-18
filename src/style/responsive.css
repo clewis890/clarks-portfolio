@@ -443,7 +443,7 @@
         flex-grow: auto;
         font-size: 230%;
         display: block;
-        margin-bottom: 5%;
+        margin-bottom: 3.5%;
         color: #325a76;
     }
 
@@ -451,7 +451,7 @@
         display: flex;
         align-self: center;
         max-width: 60%;
-        margin: 5% auto;
+        margin: 1% auto;
     }
 
     .row p.intro-text {
