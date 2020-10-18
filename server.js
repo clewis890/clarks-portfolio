@@ -4,18 +4,18 @@ const favicon = require('express-favicon');
 const path = require('path');
 const port = process.env.PORT || 8080;
 const app = express();
-const php = require('php');
+// const php = require('php');
 
 // php templating engine
-app.set('views', path.join(__dirname, 'templates'))
-app.set('view engine', 'php')
-app.engine('php', php.__express)
+// app.set('views', path.join(__dirname, 'templates'))
+// app.set('view engine', 'php')
+// app.engine('php', php.__express)
 
-app.get('/', (req, res) => {
-  res.render('index.php', {
-    hello: 'world'
-  });
-});
+// app.get('/', (req, res) => {
+//   res.render('index.php', {
+//     hello: 'world'
+//   });
+// });
 
 app.use(favicon(__dirname + '/build/favicon.ico'));
 // the __dirname is the current directory from where the script is running
