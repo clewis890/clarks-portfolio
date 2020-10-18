@@ -36,7 +36,7 @@ div.socialmedia {
     display: block;
     position: fixed;
     top: 2%;
-    right: 2%;
+    right: 4%;
     height: 81px;
     width: 22px;
     z-index: 9999;
@@ -53,10 +53,10 @@ ul .clark-social a:link,
 ul .clark-social a:visited {
     color: #4b87b2;
     transition: color .5s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
 }
 
 ul .clark-social a:hover,
@@ -176,10 +176,10 @@ ul.hamburgerDropDown {
     border: 0;
     color: #fff;
     transition: color 0.5s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
 }
 
 .hamburgerDropDown li a:hover,
@@ -207,10 +207,10 @@ ul.hamburgerDropDown {
     padding: 1%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.405));
     border-radius: 15px;
-    -webkit-border-radius: ;
-    -moz-border-radius: ;
-    -ms-border-radius: ;
-    -o-border-radius: ;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .main-nav li a:link,
@@ -242,8 +242,8 @@ ul.hamburgerDropDown {
 /*----------------------*/
 
 ion-icon {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 2rem;
+    width: 2rem;
     line-height: 0%;
 }
 
@@ -483,11 +483,11 @@ div.yerba-text { text-align: center; }
 .mateguys-link:active {
     color: #191b47;
     border-bottom: 1px solid black;
-    transition:  color 0.2s ease;
-    -webkit-transition:  color 0.2s ease;
-    -moz-transition:  color 0.2s ease;
-    -ms-transition:  color 0.2s ease;
-    -o-transition:  color 0.2s ease;
+    transition:  border 0.3s, color 0.3s ease;
+    -webkit-transition:  border 0.3s, color 0.3s ease;
+    -moz-transition:  border 0.3s, color 0.3s ease;
+    -ms-transition:  border 0.3s, color 0.3s ease;
+    -o-transition:  border 0.3s, color 0.3s ease;
 }
 
 .flex-container:last-child { margin-bottom: 20px; }
