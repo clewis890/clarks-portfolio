@@ -11,10 +11,15 @@ import history from '../history';
 import Home from '../containers/Home';
 import Hobbies from '../containers/Hobbies';
 import Projects from '../containers/Projects';
+import ContactForm from './ContactForm';
+
 
 class App extends React.Component {
+  
+
     render() {
-        return (
+        return (   
+            <div className="App">
             <Router history={history}>
                 <Switch>
                     <Route exact path='/' component={Home} />
@@ -22,6 +27,7 @@ class App extends React.Component {
                     <Route path='/Projects' component={Projects} />
                </Switch>
             </Router>
+            </div>
             );
         }
     }

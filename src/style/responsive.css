@@ -105,6 +105,16 @@
         height: 80vh;
     }
 
+    div.socialmedia {
+        top: 30%;
+        right: 4%;
+    }
+  
+    ion-icon {
+        height: 2.3rem;
+        width: 2.3rem;
+    }
+
     .hero-text-box {
         top: 77%;
         left: 50%;
@@ -394,7 +404,7 @@
 
 /* Large Desktops 1200px and up */
 @media only screen and (min-width: 1200px) {
-    
+  
     .section-aboutme {
         position: relative;
         height: auto;
@@ -443,7 +453,7 @@
         flex-grow: auto;
         font-size: 230%;
         display: block;
-        margin-bottom: 5%;
+        margin-bottom: 3.5%;
         color: #325a76;
     }
 
@@ -451,7 +461,7 @@
         display: flex;
         align-self: center;
         max-width: 60%;
-        margin: 5% auto;
+        margin: 1% auto;
     }
 
     .row p.intro-text {
