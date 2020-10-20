@@ -35,8 +35,8 @@ div.socialmedia {
     max-height: auto;
     display: block;
     position: fixed;
-    top: 2%;
-    right: 4%;
+    top: 1%;
+    right: 0.5%;
     height: 81px;
     width: 22px;
     z-index: 9999;
@@ -88,7 +88,7 @@ div.hero-text-box {
 
 .hero-text-box p {
     font-weight: normal;
-    font-size: 140%;
+    font-size: 128%;
     margin: 1.5% 0 3.5% 0;
     color: #fdfefe;
     text-align: center;
@@ -176,10 +176,10 @@ ul.hamburgerDropDown {
     border: 0;
     color: #fff;
     transition: color 0.5s;
-    -webkit-transition: color 0.5s;
-    -moz-transition: color 0.5s;
-    -ms-transition: color 0.5s;
-    -o-transition: color 0.5s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 .hamburgerDropDown li a:hover,
@@ -242,8 +242,8 @@ ul.hamburgerDropDown {
 /*----------------------*/
 
 ion-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 1.7rem;
+    width: 1.7rem;
     line-height: 0%;
 }
 
@@ -306,6 +306,7 @@ figure.author-pic img {
     align-items: center;
     max-width: 100%;
     margin-top: 9em;
+    padding-right: inherit !important;
 }
 
 h2.intro-header {
@@ -558,7 +559,7 @@ section.section-contact-me {
     justify-content: center;
     top: 40%;
     z-index: 0;
-    margin: 0 5%;
+    margin: 0 auto;
     height: auto;
     max-width: 100%;
     color: #fff;
@@ -604,7 +605,6 @@ section.section-contact-me {
     line-height: 1.8em;
     text-align: center;
     font-size: 95%;
-    
 }
 
 .contactme {
@@ -612,6 +612,7 @@ section.section-contact-me {
 }
 
 .contact-text button {
+    width: 50%;
     position: relative;
     background-color:  #d4802c;
     margin-top: 15px;
