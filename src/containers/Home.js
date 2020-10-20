@@ -17,7 +17,7 @@ class Home extends React.Component {
                 <body>
                     <Header />
                     <section className="section-aboutme">
-                        <div classname="row">
+                        <div className="row">
                             <div className=" col span-1-of-2 author-box">
                                 <figure className="author-pic">
                                     <img src={clark} alt="clark" />

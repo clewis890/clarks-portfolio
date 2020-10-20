@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import { Link } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import PhotoGallery from '../components/PhotoGallery';
 import yerbamate from '../portfoliopics/chimarrao.jpg';

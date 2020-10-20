@@ -11,7 +11,6 @@ import history from '../history';
 import Home from '../containers/Home';
 import Hobbies from '../containers/Hobbies';
 import Projects from '../containers/Projects';
-import ContactForm from './ContactForm';
 
 
 class App extends React.Component {

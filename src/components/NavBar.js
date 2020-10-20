@@ -81,7 +81,7 @@ class NavBar extends Component {
             <div className="navbar">
                 { this.state.open ? this.displayMobileMenu() : null }
                 {/* { window.innerWidth > 1400 ? this.displayNavBar() : this.displayHamburgerMenu()} */}
-                { window.innerWidth > 767 ? this.displayDesktopHamburgerMenu() : this.displayHamburgerMenu()}
+                { window.innerWidth >  576 ? this.displayDesktopHamburgerMenu() : this.displayHamburgerMenu()}
             </div>
         )
     }
