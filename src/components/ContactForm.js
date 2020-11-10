@@ -65,9 +65,6 @@ class ContactForm extends React.Component {
     onMessageChange(e) {
         this.setState({message: e.target.value})
     }
-
-    
-
 }
 
 export default ContactForm;

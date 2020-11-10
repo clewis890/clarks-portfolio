@@ -42,6 +42,8 @@
 
     .slider-gallery img { height: 14em; }
 
+    h3.project-title { margin: 5% auto 0 auto; }
+
     .contact-box { margin: 0 7%; }
 
     .contact-box h2 {
@@ -112,6 +114,11 @@
     }
 
     div.hamburgers { width: 25px; }
+
+    h3.project-title { margin: 5% auto 0 auto; }
+
+    .project-text { width: 55%; }
+
 }
 
 /* Tablets 768px and up */
@@ -273,6 +280,8 @@
 
     .flex-container:last-child { margin-bottom: 50px; }
 
+    .project-text { width: 50%; }
+
     section.section-contact-me { 
         height: 80vh;
         background-attachment: fixed; 
@@ -383,6 +392,8 @@
     }
 
     div.slider-gallery { width: 400px; }
+
+    .project-text { width: 40%; }
 
     section.section-contact-me { height: 70vh; }
 
@@ -508,6 +519,8 @@
         height: 22em;
         width: 22em;
     }
+
+    .project-text { width: 35%; }
 
     .contact-box { margin: 0 15%; }
 
