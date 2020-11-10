@@ -2,6 +2,8 @@ import React, { Suspense } from 'react';
 import LoadingSpinner from '../components/LoadingSpinner';
 import "../style/index.css";
 import "../style/responsive.css";
+import weddingsite from '../portfoliopics/weddingwebsite.png';
+
 
 const Header = React.lazy(() => import('../components/Header'));
 const Contact = React.lazy(() => import('../components/Contact'));
@@ -20,9 +22,14 @@ class Projects extends React.Component {
                             <div className="row">
                                 <div className="col-12 first-box">
                                     <h2 className="project-header">Here are a few projects I have completed</h2>
-                                    <p className="project-text">Coming very soon!
-                                    <br /><ion-icon name="happy-outline" className="ion-icon"></ion-icon>
-                                    </p>
+                                    <div className="firstproject">
+                                    <h3 className="project-title">Wedding Website</h3>
+                                    <p className="project-text">This is a site I built for my wedding. I decided to take on the project as a way to have users (friends and family) directly interact with the site, through filling out the RSVP form, viewing the photo album, and following the registry link, ensuring the user experience is ideal and that it is easy to navigate and use.</p>
+                                    <br />
+                                    <a href="http://antoniaeclark.com" className="weddinglink" >Antonia and Clark wedding</a>
+                                    <img src={weddingsite} alt="wedding website screenshot" className="projectpicture" />
+                                    
+                                    </div>
                                 </div>
                             </div>
                     </section>

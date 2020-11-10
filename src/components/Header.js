@@ -29,7 +29,7 @@ class Header extends Component {
                     </div>
                     <div className="hero-text-box">
                         <p className="header-text">Hi, my name is Clark<br /></p>
-                        <p>I'm a Web Developer</p>
+                        <p className="header-text"> I'm a Web Developer</p>
                     </div>
                         <div className="navigation">
                            <NavBar />

@@ -80,10 +80,10 @@ div.hero-text-box {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -70%);
-    -webkit-transform: translate(-50%, -70%);
-    -moz-transform: translate(-50%, -70%);
-    -ms-transform: translate(-50%, -70%);
-    -o-transform: translate(-50%, -70%);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
 .hero-text-box p {
@@ -94,9 +94,19 @@ div.hero-text-box {
     text-align: center;
 }
 
+
 .hero-text-box p:first-child {
-    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Turret Road', cursive;
+
     font-style: italic;
+    font-weight: 100;
+}
+
+.hero-text-box p:second-child {
+    /* font-family: 'Turret Road', cursive; */
+    font-family: 'Source Code Pro', monospace;
+
     font-weight: 100;
 }
 
@@ -176,10 +186,10 @@ ul.hamburgerDropDown {
     border: 0;
     color: #fff;
     transition: color 0.5s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
 }
 
 .hamburgerDropDown li a:hover,
@@ -519,20 +529,40 @@ h2.project-header {
 
 .project-text { width: 40%; }
 
-p.project-text {
+h3.project-title {
     display: flex;
     align-self: center;
     max-width: 80%;
-    margin: 10% auto;
+    margin: 10% auto 0 auto;
 }
 
-.row p.project-text {
-    line-height: 1.8rem;
+.row h3.project-title {
+    line-height: 1rem;
     text-align: center;
     align-items: center;
     display: block;
 }
 
+div.firstproject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-text {
+    margin-top: 5%;
+    width: 80%;
+}
+
+.weddinglink {
+    margin-bottom: 3%;
+}
+
+img.projectpicture {
+    width: 400px;
+    height: 400px;
+}
 
 /*-------------------------------*/
 /*-------- Contact Section-------*/
@@ -646,9 +676,6 @@ button a {
 
 button.btn { padding: 12px 18px; }
 
-.contact-text p a:hover,
-.contact-text p a:active { color: #000000; }
-
 .btn:hover,
 .btn:active { 
     background-color: #e78e35;
@@ -705,7 +732,6 @@ footer {
 
 div.row.row-footer,
 div.row.row-copyright { margin: 0; }
-
 
 .footer-nav li a:link,
 .footer-nav li a:visited {
