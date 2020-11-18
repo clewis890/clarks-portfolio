@@ -205,7 +205,24 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-}
+    }
+
+    @keyframes slidein {
+        from {
+            transform: translateX(100%);         ;
+            -webkit-transform: translateX(100%)         ;
+            -moz-transform: translateX(100%)         ;
+            -ms-transform: translateX(100%)         ;
+            -o-transform: translateX(100%)         ;
+        }
+        to {
+            transform: translateX(0%);        ;
+            -webkit-transform: translateX(0%)        ;
+            -moz-transform: translateX(0%)        ;
+            -ms-transform: translateX(0%)        ;
+            -o-transform: translateX(0%)        ;
+        }
+    }
 
     .intro-box {
         height: auto;
@@ -235,7 +252,9 @@
         max-width: 80%;
         margin-bottom: 0%;
         margin-top: 1%;
-    }
+        animation: 2s ease-in 0.65s both running slidein;    ;
+        -webkit-animation:     ;
+}
 
     .row p.intro-text { width: 100%; }
 

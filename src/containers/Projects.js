@@ -10,6 +10,7 @@ const Contact = React.lazy(() => import('../components/Contact'));
 const Footer = React.lazy(() => import('../components/Footer'));
 
 class Projects extends React.Component { 
+    
     render() {
         return (
             <div>

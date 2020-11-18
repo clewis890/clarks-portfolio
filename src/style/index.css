@@ -96,17 +96,13 @@ div.hero-text-box {
 
 
 .hero-text-box p:first-child {
-    /* font-family: 'Source Code Pro', monospace; */
     font-family: 'Turret Road', cursive;
-
     font-style: italic;
     font-weight: 100;
 }
 
 .hero-text-box p:second-child {
-    /* font-family: 'Turret Road', cursive; */
     font-family: 'Source Code Pro', monospace;
-
     font-weight: 100;
 }
 
@@ -343,6 +339,28 @@ p.intro-text {
 }
 
 .section-aboutme div.row div.box { z-index: 0; }
+
+.skills { 
+    width: 90%;
+    margin: 1em auto;
+}
+
+ .skills h3 {
+     margin: 0 auto;
+ }
+.skillslist {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1em auto auto auto;
+    width: 35%;
+}
+
+.skillslist li {
+    list-style: circle !important;
+    text-align: left;
+    margin: auto 2em auto auto;
+}
 
 /*----------------------*/
 /*-----PHOTOGRAPHY------*/
