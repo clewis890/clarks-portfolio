@@ -353,13 +353,13 @@ p.intro-text {
     flex-wrap: wrap;
     flex-direction: row;
     margin: 1em auto auto auto;
-    width: 35%;
+    width: 30%;
 }
 
 .skillslist li {
     list-style: circle !important;
     text-align: left;
-    margin: auto 2em auto auto;
+    margin: auto 1.5em auto 0;
 }
 
 /*----------------------*/

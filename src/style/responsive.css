@@ -27,6 +27,8 @@
 
     p.intro-text { margin-bottom: 0%; }
 
+    .skillslist li { margin: auto 2em; }
+
     .photo-box:first-child {
         margin: 0 2%;
         text-align: center;
@@ -160,6 +162,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .skillslist { 
+        display: flex;
+        justify-content: center;
+        width: 70%;
+     }
+    .skillslist li {
+        margin:  auto 2em 1em 2em;
     }
 
     div.author-box {
