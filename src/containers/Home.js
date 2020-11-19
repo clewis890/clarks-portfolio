@@ -34,13 +34,15 @@ class Home extends React.Component {
                                     I am actively looking for my first professional role as a Web Developer.
                                     </p>
                                     <div className="skills">
-                                    <h3 className="skilltitle">Here are the languages and frameworks I use:</h3>
+                                    <h3 className="skilltitle">Here are the languages, frameworks and technologies I use:</h3>
                                     <ul className="skillslist">
                                         <li>HTML5</li>
                                         <li>CSS3</li>
                                         <li>JavaScript</li>
                                         <li>React js</li>
                                         <li>Next js</li>
+                                        <li>Git / GitHub</li>
+                                        <li>Heroku</li>
                                     </ul>
                                     </div>
                             </div>

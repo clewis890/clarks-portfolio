@@ -21,7 +21,7 @@ class Header extends Component {
                                 </a>
                             </li>
                             <li className="clark-social">
-                                <a href="mailto:clewis890@gmail.com">
+                                <a href="mailto:hello@clarkglewis.com">
                                     <ion-icon name="mail-sharp" className="icon-small"></ion-icon>
                                 </a>
                             </li>
