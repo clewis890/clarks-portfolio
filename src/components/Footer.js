@@ -22,7 +22,7 @@ class Footer extends React.Component {
                 </div>
                 <div className="row row-copyright">
                     <div className="col span-1-of-2 copyright-box">
-                        <p className="copyright-text">Copyright Clark Lewis Web Development 2020 &copy;</p>
+                        <p className="copyright-text">Copyright &copy; Clark Lewis Web Development 2020</p>
                     </div>
                 </div>
             </footer>

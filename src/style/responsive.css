@@ -44,7 +44,7 @@
 
     .slider-gallery img { height: 14em; }
 
-    h3.project-title { margin: 5% auto 0 auto; }
+    h3.project-title { margin: 10% auto 0 auto; }
 
     .contact-box { margin: 0 7%; }
 
@@ -58,6 +58,8 @@
         padding: 0% 2%;
         font-size: 100%;
     }
+
+    button.btn { width: 60%; }
 
     .footer-box ul {
         font-size: 120%;
@@ -118,7 +120,10 @@
     div.hamburgers { width: 25px; }
 
     h3.project-title { margin: 5% auto 0 auto; }
-
+    img.projectpicture {
+        width: 400px;
+        height: 400px;
+    }
     .project-text { width: 55%; }
 
 }
@@ -139,8 +144,8 @@
     }
   
     ion-icon {
-        height: 2.3rem;
-        width: 2.3rem;
+       height: 2.3rem;
+       width: 2.3rem;      
     }
 
     .hero-text-box {
@@ -164,13 +169,21 @@
         align-items: center;
     }
 
+    .skills { margin: 3em auto; }
     .skillslist { 
         display: flex;
         justify-content: center;
         width: 70%;
      }
+
     .skillslist li {
+        list-style: disc !important;
         margin:  auto 2em 1em 2em;
+        border-bottom: 1px solid transparent;
+    }
+
+    .skillslist li:hover {
+        border-bottom: 1px solid #2c2c2c;
     }
 
     div.author-box {
@@ -220,21 +233,21 @@
 
     @keyframes slidein {
         from {
-            transform: translateX(100%);         ;
-            -webkit-transform: translateX(100%)         ;
-            -moz-transform: translateX(100%)         ;
-            -ms-transform: translateX(100%)         ;
-            -o-transform: translateX(100%)         ;
-        }
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
+}
         to {
-            transform: translateX(0%);        ;
-            -webkit-transform: translateX(0%)        ;
-            -moz-transform: translateX(0%)        ;
-            -ms-transform: translateX(0%)        ;
-            -o-transform: translateX(0%)        ;
-        }
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            -moz-transform: translateX(0%);
+            -ms-transform: translateX(0%);
+            -o-transform: translateX(0%);
+}
     }
-
+    
     .intro-box {
         height: auto;
         display: block;
@@ -263,8 +276,8 @@
         max-width: 80%;
         margin-bottom: 0%;
         margin-top: 1%;
-        animation: 2s ease-in 0.65s both running slidein;    ;
-        -webkit-animation:     ;
+        animation: 2s ease-in 0.65s both running slidein;
+        -webkit-animation: 2s ease-in 0.65s both running slidein;
 }
 
     .row p.intro-text { width: 100%; }
@@ -335,7 +348,7 @@
         width: 70%;
         margin: auto auto 3% auto;
     }
-
+    
     .footer-nav li { font-size: 45%; }
 
     footer .row p { font-size: 95%; }
