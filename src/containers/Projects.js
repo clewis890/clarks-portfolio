@@ -5,24 +5,21 @@ import "../style/responsive.css";
 import weddingsite from '../portfoliopics/weddingwebsite.png';
 
 
-const Header = React.lazy(() => import('../components/Header'));
-const Contact = React.lazy(() => import('../components/Contact'));
-const Footer = React.lazy(() => import('../components/Footer'));
+// const Header = React.lazy(() => import('../components/Header'));
+// const Contact = React.lazy(() => import('../components/Contact'));
+// const Footer = React.lazy(() => import('../components/Footer'));
 
 class Projects extends React.Component { 
 
     render() {
         return (
             <div>
-                <Suspense fallback={<LoadingSpinner />}>
-                <body>
-                <Header />
                     <section className="section-projects">
                         <div classname="row">
                             </div>
                             <div className="row">
-                                <div className="col-12 first-box">
-                                    <h2 className="project-header">Here are a few projects I have completed</h2>
+                                <div className="first-box">
+                                    <h2 className="project-header">Projects</h2>
                                     <div className="firstproject">
                                         <h3 className="project-title">Wedding Website</h3>
                                             <p className="project-text">This is a site I built for my wedding. I decided to take on this project as a way to try out new things and challenge myself. I implemented Formspree forms for form validation,  Disqus Comments for the comment section, and a real-time countdown timer to the time of the wedding.</p>
@@ -33,10 +30,6 @@ class Projects extends React.Component {
                                 </div>
                             </div>
                     </section>
-                    <Contact />
-                    <Footer />
-                </body>
-                </Suspense>
             </div>  
         );
     }
