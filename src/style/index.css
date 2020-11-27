@@ -1,4 +1,4 @@
-* {
+*, body {
     font-family: 'Titillium Web', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +8,15 @@
 
 body {
     font-size: 24px;
+    overflow-x: hidden;
+    min-width: 306px;
+    padding: 0;
+    margin: 0;
 }
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 
 /*-------------------------*/
 /*--------HEADER-----------*/
@@ -55,10 +63,10 @@ ul .clark-social a:link,
 ul .clark-social a:visited {
     color: #4b87b2;
     transition: color .5s;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -ms-transition: color .5s;
-    -o-transition: color .5s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 ul .clark-social a:hover,
@@ -66,9 +74,7 @@ ul .clark-social a:active {
     color: #86afcc;
 }
 
-.social-icons li {
-    list-style: none;
-}
+.social-icons li { list-style: none; }
 
 li.clark-social {
     width: 25px;
@@ -139,13 +145,8 @@ h2:after {
     margin-top: 20px;
 }
 
-section {
-    padding: 80px 0;
-}
-
-p {
-    display: block;
-}
+section { padding: 80px 0; }
+p { display: block; }
 
 .heroButton {
     margin: 2%;
@@ -157,9 +158,7 @@ div.navbar {
     width: 50%;
 }
 
-div.navigaton {
-    width: 50%;
-}
+div.navigaton { width: 50%; }
 
 a.heroButton.mobile-link {
     font-size: 90%;
@@ -168,9 +167,7 @@ a.heroButton.mobile-link {
     width: fit-content;
 }
 
-.burgers:hover {
-    cursor: pointer;
-}
+.burgers:hover { cursor: pointer; }
 
 ul.hamburgerDropDown {
     position: fixed;
@@ -256,8 +253,7 @@ ul.hamburgerDropDown {
 
 .row {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -271,9 +267,7 @@ ion-icon {
     line-height: 0%;
 }
 
-.ion-icon {
-    display: block;
-}
+.ion-icon { display: block; }
 
 /*----------------------*/
 /*----INTRO SECTION-----*/
@@ -281,11 +275,25 @@ ion-icon {
 
 .section-aboutme {
     position: relative;
+    padding-bottom: 0 !important;
     height: auto;
+    max-width: 100%;
+    margin: 0 auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div.row {
+    width: 100%;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.homepagecontainer {
+    width: 100%;
+    margin: 0 auto;
 }
 
 div.author-box {
@@ -302,7 +310,7 @@ figure.author-pic {
     justify-content: center;
     align-items: center;
     height: auto;
-    width: auto;
+    max-width: 100%;
     border-radius: 50%;
     margin: 0;
     object-fit: fill;
@@ -331,7 +339,7 @@ figure.author-pic img {
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    margin-top: 9em;
+    margin: 9em auto 0 auto;
     padding-right: inherit !important;
 }
 
@@ -340,7 +348,7 @@ h2.intro-header {
     flex-grow: auto;
     font-size: 230%;
     display: block;
-    margin-bottom: 5%;
+    margin: 0 auto 5% auto;
     color: #325a76;
 }
 
@@ -363,26 +371,34 @@ p.intro-text {
 }
 
 .skills {
-    width: 90%;
+    width: 100%;
     margin: 1em auto;
 }
 
 .skills h3 {
     margin: 0 auto;
+    width: 90%;
 }
 
 .skillslist {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 1em auto auto auto;
-    width: 30%;
+    justify-content: center;
+    margin: 1em auto 50px auto;
+    width: 82%;
 }
 
 .skillslist li {
-    list-style: circle !important;
-    text-align: left;
-    margin: auto 1.5em auto 0;
+    list-style: none;
+    text-align: center;
+    margin: 0.5em 1.2em auto 0;
+    /* border: 1px solid black; */
+    padding: 2px;
+}
+
+ul.skillslist {
+    color: #325a76;
 }
 
 /*----------------------*/
@@ -414,23 +430,36 @@ div.yerba-box {
     margin: 10px 0;
 }
 
+h2.photo-header { 
+    font-size:110%;
+}
+
+h2.photo-header:after {
+    display: block;
+    height: 0;
+    background-color: #4b87b2;
+    width: 100px;
+    margin: 50px auto 0 auto;
+}
+
 .photo-box {
     width: 100%;
 }
 
 div.intro-text {
-    width: 95%;
+    width: 80%;
     text-align: center;
+    margin: auto;
 }
 
 img .pic-gallery {
     height: 50px;
     width: 50px;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .slider-gallery {
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -452,9 +481,7 @@ button.slick-arrow.slick-next {
 }
 
 .slick-prev:before,
-button.slick-arrow.slick-prev {
-    margin-left: 1.3em;
-}
+button.slick-arrow.slick-prev { margin-left: 1.3em; }
 
 
 .slick-next:before {
@@ -469,9 +496,7 @@ button.slick-arrow.slick-prev {
     z-index: 9999;
 }
 
-.photo-box:last-child {
-    z-index: 0;
-}
+.photo-box:last-child { z-index: 0; }
 
 .pic-gallery {
     height: 50px;
@@ -479,8 +504,8 @@ button.slick-arrow.slick-prev {
 }
 
 .slider-gallery img {
-    height: 15em;
-    width: 15em;
+    height: 13.5em;
+    width: 13.5em;
 }
 
 /*----------------------*/
@@ -497,9 +522,7 @@ h2.yerba-header-1 {
     color: #325a76;
 }
 
-h2.yerba-header-2 {
-    display: none;
-}
+h2.yerba-header-2 { display: none; }
 
 div.yerba-box {
     position: relative;
@@ -508,18 +531,18 @@ div.yerba-box {
 }
 
 .yerba-pic img {
-    width: 15em;
-    height: 15em;
+    width: 13.5em;
+    height: 13.5em;
 }
 
-div.yerba-text {
-    text-align: center;
-}
+div.yerba-text { text-align: center; }
 
 .yerba-text p {
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
 .mateguys-link a {
@@ -560,27 +583,25 @@ div.yerba-text {
     position: relative;
     height: auto;
     overflow: hidden;
+    padding-bottom: 40px !important;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fafafa;
 }
 
 h2.project-header {
-    max-width: 100%;
-    flex-grow: auto;
+    max-width: 70%;
+    flex-grow: 1;
     font-size: 230%;
     display: block;
     margin: auto;
     color: #325a76;
 }
 
-.project-header {
-    width: 80%;
-}
+.project-header { width: 80%; }
 
-.project-text {
-    width: 40%;
-}
+.project-text { width: 40%; }
 
 h3.project-title {
     display: flex;
@@ -601,15 +622,18 @@ div.firstproject {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 .project-text {
     margin-top: 5%;
+    text-align: center;
     width: 80%;
 }
 
 .weddinglink {
     margin-bottom: 5%;
+    color: #325a76;
 }
 
 img.projectpicture {
@@ -692,9 +716,7 @@ section.section-contact-me {
     font-size: 95%;
 }
 
-.contactme {
-    text-decoration: underline;
-}
+.contactme { text-decoration: underline; }
 
 .contact-text button {
     width: 50%;
@@ -739,9 +761,34 @@ button.btn {
     background-color: #e78e35;
 }
 
+
 /*----------------------------------*/
 /*--------------FOOTER--------------*/
 /*----------------------------------*/
+
+.scroller {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 1em;
+}
+
+.scroller button {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #4b87b2;
+    height: 2.5em;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+.scroller button:hover {
+    color: #325a76;
+}
 
 footer {
     width: 100%;
@@ -752,7 +799,7 @@ footer {
     position: relative;
     background-color: #1e3546;
     height: auto;
-    padding: 15px 0;
+    padding: 25px 0;
     margin: 0;
     overflow: hidden;
 }

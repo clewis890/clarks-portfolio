@@ -5,13 +5,16 @@ import "../style/responsive.css";
 import clark from '../portfoliopics/profpic.jpg';
 import LoadingSpinner from '../components/LoadingSpinner';
 
+import Hobbies from './Hobbies';
+import Projects from './Projects';
+
 const Header = React.lazy(() => import('../components/Header'));
-const Contact = React.lazy(() => import('../components/Contact'));
 const Footer = React.lazy(() => import('../components/Footer'));
 
 
 
 class Home extends React.Component {
+    
         render() {
             return (
                 <div>
@@ -21,27 +24,27 @@ class Home extends React.Component {
                     <section className="section-aboutme">
                         <div className="homepagecontainer">
                         <div className="row">
-                            <div className=" col span-1-of-2 author-box">
+                            <div className="author-box">
                                 <figure className="author-pic">
                                     <img src={clark} alt="clark" />
                                 </figure>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col span-1-of-2 intro-box">
+                            <div className="intro-box">
                                 <h2 className="intro-header">Hey there!</h2>
-                                    <p className="intro-text">My name is Clark Lewis and I was raised in the Pacific Northwest. I enjoy the outdoors, pizza, and actively re-watching TV series I've already finished a dozen times. Most of my career path has been customer-oriented. I decided to hit the brakes and find a different path. So, I took on learning web development at the end of 2019 and I haven't stopped since.
+                                    <p className="intro-text">My name is Clark Lewis and I was raised in the Pacific Northwest. I enjoy the outdoors, pizza, and actively re-watching TV series I've already finished a dozen times. Most of my career path has been customer-oriented. I started on the self-taught Web Developer path at the end of 2019, starting on courses in Codecademy, and then moving on to Udemy.
                                     I am actively looking for my first professional role as a Web Developer.
                                     </p>
                                     <div className="skills">
                                     <h3 className="skilltitle">Here are the languages, frameworks and technologies I use:</h3>
                                     <ul className="skillslist">
-                                        <li>HTML5</li>
-                                        <li>CSS3</li>
-                                        <li>JavaScript</li>
-                                        <li>React js</li>
+                                        <li>HTML5 <ion-icon name="logo-html5" className="icon-medium"></ion-icon></li>
+                                        <li>CSS3<ion-icon name="logo-css3" className="icon-medium"></ion-icon></li>
+                                        <li>JavaScript<ion-icon name="logo-javascript" className="icon-medium"></ion-icon></li>
+                                        <li>React js<ion-icon name="logo-react" className="icon-medium"></ion-icon></li>
                                         <li>Next js</li>
-                                        <li>Git / GitHub</li>
+                                        <li>Git / GitHub<ion-icon name="git-branch-outline" className="icon-medium"></ion-icon><ion-icon name="logo-github" className="icon-small"></ion-icon></li>
                                         <li>Heroku</li>
                                     </ul>
                                     </div>
@@ -49,7 +52,8 @@ class Home extends React.Component {
                         </div>
                         </div>
                     </section>
-                    <Contact />
+                    <Projects />
+                    <Hobbies />
                     <Footer />
                 </body>
                 </Suspense>
