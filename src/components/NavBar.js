@@ -57,10 +57,10 @@ class NavBar extends Component {
     displayNavBar() {
         return (
             <ul className="main-nav">
-                <li><NavLink exact to="/" className="heroButton nav-link">Home</NavLink></li>
+                {/* <li><NavLink exact to="/" className="heroButton nav-link">Home</NavLink></li>
                 <li><NavLink exact to="/hobbies" className="heroButton nav-link">Hobbies</NavLink></li>
-                <li><NavLink exact to="/projects" className="heroButton nav-link">Projects</NavLink></li>
-                <li><Link exact to="mailto:hello@clarkglewis.com" className="heroButton nav-link">Contact</Link></li>
+                <li><NavLink exact to="/projects" className="heroButton nav-link">Projects</NavLink></li> */}
+                <li><Link exact to="mailto:hello@clarkglewis.com" className="heroButton nav-link">Contact me at hello@clarkglewis.com</Link></li>
             </ul>
         )
     }
@@ -68,10 +68,10 @@ class NavBar extends Component {
     displayMobileMenu() {
         return (
             <ul className="hamburgerDropDown">
-                <li><NavLink exact to="/" className="heroButton mobile-link">Home</NavLink></li>
+                {/* <li><NavLink exact to="/" className="heroButton mobile-link">Home</NavLink></li>
                 <li><NavLink exact to="/hobbies" className="heroButton mobile-link">Hobbies</NavLink></li>
-                <li><NavLink exact to="/projects" className="heroButton mobile-link">Projects</NavLink></li>
-                <li><NavLink exact to="mailto:hello@clarkglewis.com" className="heroButton mobile-link">Contact</NavLink></li>
+                <li><NavLink exact to="/projects" className="heroButton mobile-link">Projects</NavLink></li> */}
+                <li><NavLink exact to="mailto:hello@clarkglewis.com" className="heroButton mobile-link">Contact me at hello@clarkglewis.com</NavLink></li>
             </ul>
         )
     }
