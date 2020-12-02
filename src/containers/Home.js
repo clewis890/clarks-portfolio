@@ -39,13 +39,13 @@ class Home extends React.Component {
                                     <div className="skills">
                                     <h3 className="skilltitle">Here are the languages, frameworks and technologies I use:</h3>
                                     <ul className="skillslist">
-                                        <li>HTML5 <ion-icon name="logo-html5" className="icon-medium"></ion-icon></li>
-                                        <li>CSS3<ion-icon name="logo-css3" className="icon-medium"></ion-icon></li>
-                                        <li>JavaScript<ion-icon name="logo-javascript" className="icon-medium"></ion-icon></li>
-                                        <li>React js<ion-icon name="logo-react" className="icon-medium"></ion-icon></li>
-                                        <li>Next js</li>
-                                        <li>Git / GitHub<ion-icon name="git-branch-outline" className="icon-medium"></ion-icon><ion-icon name="logo-github" className="icon-small"></ion-icon></li>
-                                        <li>Heroku</li>
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" className="skilllink"><li>HTML5 <ion-icon name="logo-html5" className="icon-medium"></ion-icon></li></a>
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" className="skilllink"><li>CSS3<ion-icon name="logo-css3" className="icon-medium"></ion-icon></li></a>
+                                        <a href="https://www.javascript.com/" className="skilllink"><li>JavaScript<ion-icon name="logo-javascript" className="icon-medium"></ion-icon></li></a>
+                                        <a href="https://reactjs.org/" className="skilllink"><li>React js<ion-icon name="logo-react" className="icon-medium"></ion-icon></li></a>
+                                        <a href="http://www.nextjs.org" className="skilllink"><li>Next js</li></a>
+                                        <a href="http://www.github.com" className="skilllink"><li>Git / GitHub<ion-icon name="git-branch-outline" className="icon-medium"></ion-icon><ion-icon name="logo-github" className="icon-small"></ion-icon></li></a>
+                                        <a href="https://www.heroku.com" className="skilllink"><li>Heroku</li></a>
                                     </ul>
                                     </div>
                             </div>
