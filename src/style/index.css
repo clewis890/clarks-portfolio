@@ -108,13 +108,14 @@ div.hero-text-box {
 
 
 .hero-text-box p:first-child {
-    font-family: 'Turret Road', cursive;
+    font-family: 'Press Start 2P', cursive !important;
     font-style: italic;
     font-weight: 100;
 }
 
-.hero-text-box p:second-child {
-    font-family: 'Source Code Pro', monospace;
+.hero-text-box p {
+    font-family: 'Changa', sans-serif !important;
+    font-family: 'Gloria Hallelujah', sans-serif !important;
     font-weight: 100;
 }
 
