@@ -11,10 +11,9 @@ import history from '../history';
 import Home from '../containers/Home';
 import Hobbies from '../containers/Hobbies';
 import Projects from '../containers/Projects';
+import Contact from '../containers/Contact';
 
 class App extends React.Component {
-
-
     render() {
         return (   
             <div className="App">
@@ -23,6 +22,7 @@ class App extends React.Component {
                     <Route exact path='/' component={Home} />
                     <Route path='/Hobbies' component={Hobbies} />
                     <Route path='/Projects' component={Projects} />
+                    <Route path='/Contact' component={Contact} />
                </Switch>
             </Router>
             </div>

@@ -3,7 +3,8 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import "../style/index.css";
 import "../style/responsive.css";
 import weddingsite from '../portfoliopics/weddingwebsite.png';
-
+import Footer from '../components/Footer';
+import SocialMedia from '../components/SocialMedia';
 
 // const Header = React.lazy(() => import('../components/Header'));
 // const Contact = React.lazy(() => import('../components/Contact'));
@@ -14,9 +15,8 @@ class Projects extends React.Component {
     render() {
         return (
             <div>
+                <SocialMedia />
                     <section className="section-projects">
-                        <div classname="row">
-                            </div>
                             <div className="row">
                                 <div className="first-box">
                                     <h2 className="project-header">Projects</h2>
@@ -30,6 +30,7 @@ class Projects extends React.Component {
                                 </div>
                             </div>
                     </section>
+                    {/* <Footer /> */}
             </div>  
         );
     }

@@ -108,13 +108,14 @@ div.hero-text-box {
 
 
 .hero-text-box p:first-child {
-    font-family: 'Turret Road', cursive;
+    font-family: 'Press Start 2P', cursive !important;
     font-style: italic;
     font-weight: 100;
 }
 
-.hero-text-box p:second-child {
-    font-family: 'Source Code Pro', monospace;
+.hero-text-box p {
+    font-family: 'Changa', sans-serif !important;
+    font-family: 'Gloria Hallelujah', sans-serif !important;
     font-weight: 100;
 }
 
@@ -771,23 +772,32 @@ button.btn {
     align-items: flex-end;
     justify-content: flex-end;
     margin-right: 1em;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .scroller button {
     cursor: pointer;
     border: none;
-    background-color: #fff;
-    color: #4b87b2;
-    height: 2.5em;
+    background-color: #325a76;
+    color: #fff;
+    height: 1.38em;
+    margin-bottom: 10px;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -ms-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .scroller button:hover {
-    color: #325a76;
+    color: #5da4d6;
 }
 
 footer {
@@ -799,7 +809,7 @@ footer {
     position: relative;
     background-color: #1e3546;
     height: auto;
-    padding: 25px 0;
+    padding: 20px 0 10px 0;
     margin: 0;
     overflow: hidden;
 }

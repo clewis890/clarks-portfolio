@@ -5,7 +5,8 @@ import yerbamate from '../portfoliopics/chimarrao.jpg';
 import "../style/index.css";
 import "../style/responsive.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-
+import Footer from '../components/Footer';
+import SocialMedia from '../components/SocialMedia';
 // const Header = React.lazy(() => import('../components/Header'));
 // const Contact = React.lazy(() => import('../components/Contact'));
 // const Footer = React.lazy(() => import('../components/Footer'));
@@ -16,6 +17,7 @@ class Hobbies extends React.Component {
             <div>
             {/* <Suspense fallback={<LoadingSpinner />}>
             <Header /> */}
+            <SocialMedia />
                 <section className="flex-container">
                     <div className="row">
                         <div className="photo-box">
@@ -50,7 +52,7 @@ class Hobbies extends React.Component {
                     </div>
                 </section>
                 <ScrollToTop />
-
+                {/* <Footer /> */}
             </div>
         );
     }
