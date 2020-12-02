@@ -52,7 +52,6 @@ class Hobbies extends React.Component {
                     </div>
                 </section>
                 <ScrollToTop />
-                {/* <Footer /> */}
             </div>
         );
     }
