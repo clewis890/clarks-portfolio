@@ -60,7 +60,7 @@ class NavBar extends Component {
                 {/* <li><NavLink exact to="/" className="heroButton nav-link">Home</NavLink></li>
                 <li><NavLink exact to="/hobbies" className="heroButton nav-link">Hobbies</NavLink></li>
                 <li><NavLink exact to="/projects" className="heroButton nav-link">Projects</NavLink></li> */}
-                <li><a href="mailto:hello@clarkglewis.com" className="heroButton nav-link">Contact me at hello@clarkglewis.com</=></li>
+                <li><a href="mailto:hello@clarkglewis.com" className="heroButton nav-link">Contact me at hello@clarkglewis.com</a></li>
             </ul>
         )
     }
