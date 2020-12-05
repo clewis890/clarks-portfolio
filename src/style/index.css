@@ -25,10 +25,6 @@ header {
     background-attachment: scroll;
     height: 70vh;
 }
-h2 {
-
-}
-
 
 /*-------------------------*/
 /*--------HEADER-----------*/
@@ -76,9 +72,7 @@ ul .clark-social a:active {
     color: #86afcc;
 }
 
-.social-icons li {
-    list-style: none;
-}
+.social-icons li { list-style: none; }
 
 li.clark-social {
     width: 25px;

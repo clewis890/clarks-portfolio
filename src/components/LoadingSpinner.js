@@ -8,9 +8,9 @@ class LoadingSpinner extends React.Component {
                 <Loader
                 type="TailSpin"
                 color="#00BFFF"
-                height={100}
-                width={100}
-                timeout={3000}
+                height={200}
+                width={200}
+                timeout={6000}
                 className="loader"
                 />
             </div>

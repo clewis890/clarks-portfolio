@@ -6,10 +6,6 @@ import weddingsite from '../portfoliopics/weddingwebsite.png';
 import Footer from '../components/Footer';
 import SocialMedia from '../components/SocialMedia';
 
-// const Header = React.lazy(() => import('../components/Header'));
-// const Contact = React.lazy(() => import('../components/Contact'));
-// const Footer = React.lazy(() => import('../components/Footer'));
-
 class Projects extends React.Component { 
 
     render() {
@@ -30,7 +26,6 @@ class Projects extends React.Component {
                                 </div>
                             </div>
                     </section>
-                    {/* <Footer /> */}
             </div>  
         );
     }
