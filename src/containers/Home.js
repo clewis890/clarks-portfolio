@@ -11,8 +11,6 @@ import Projects from './Projects';
 const Header = React.lazy(() => import('../components/Header'));
 const Footer = React.lazy(() => import('../components/Footer'));
 
-
-
 class Home extends React.Component {
     
         render() {

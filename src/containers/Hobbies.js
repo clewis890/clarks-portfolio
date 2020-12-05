@@ -7,23 +7,18 @@ import "../style/responsive.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Footer from '../components/Footer';
 import SocialMedia from '../components/SocialMedia';
-// const Header = React.lazy(() => import('../components/Header'));
-// const Contact = React.lazy(() => import('../components/Contact'));
-// const Footer = React.lazy(() => import('../components/Footer'));
 
 class Hobbies extends React.Component {
     render() {
         return (
             <div>
-            {/* <Suspense fallback={<LoadingSpinner />}>
-            <Header /> */}
             <SocialMedia />
                 <section className="flex-container">
                     <div className="row">
                         <div className="photo-box">
                         <h2 className="intro-header">Photography</h2>
                                 <div className="intro-text">
-                                    <p>I enjoy taking pictures wherever I go. I take my pictures with the iPhone XR. From time to time I will be rotating out the pictures I have on display here. Feel free to click or swipe on the pictures!
+                                    <p className="phototext">I enjoy taking pictures wherever I go. I take my pictures with the iPhone XR. From time to time I will be rotating out the pictures I have on display here. Feel free to click or swipe on the pictures!
                                     </p>
                                 </div>
                         </div>

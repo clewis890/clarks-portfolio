@@ -214,10 +214,10 @@
         border-radius: 50%;
         margin: 0;
         object-fit: fill;
-        -webkit-border-radius:;
-        -moz-border-radius:;
-        -ms-border-radius:;
-        -o-border-radius:;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
 }
 
     figure.author-pic img {
@@ -226,19 +226,19 @@
         width: 8em;
         border-radius: 50%;
         object-fit: cover;
-        -webkit-border-radius:;
-        -moz-border-radius:;
-        -ms-border-radius:;
-        -o-border-radius:;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
 }
 
     @keyframes slidein {
         from {
             transform: translateX(100%);
-            -webkit-transform:;
-            -moz-transform:;
-            -ms-transform:;
-            -o-transform:;
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
 }
 
         to {
@@ -251,13 +251,7 @@
     }
 
     .intro-box {
-        height: auto;
         display: block;
-        position: relative;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        top: 0;
     }
 
     h2.intro-header {
@@ -427,20 +421,49 @@
     }
 
     .intro-box { margin-top: 20%; }
-    p.intro-text { max-width: 75%; }
+    p.intro-text {
+        box-shadow: 1px 2px 8px #777777;
+        border-radius: 20px;
+        padding: 30px;
+        max-width: 600px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
 
     .row p.intro-text {
         line-height: 2.1rem;
         margin: 4% auto;
     }
 
+    figure.author-pic {
+        margin: 0 auto; 
+        height: 250px;
+        width: 350px;
+    }
+    .author-pic img { box-shadow: 1px 2px 18px #777; }
     figure.author-pic img {
         height: 12em;
         width: 12em;
     }
 
-    div.slider-gallery { width: 400px; }
+    div.slider-gallery { 
+        width: 400px; 
+        box-shadow: 1px 2px 18px #777;
+        margin: 0 0 5% 0;
+    }
+    .flex-container { margin-bottom: 0;}
+    img.projectpicture { 
+        margin-bottom: 20px;
+        box-shadow: 1px 2px 18px #272727;
+    }
     .project-text { width: 40%; }
+
+    h2.intro-header { margin-bottom: 5%; }
+    div.photo-box:first-child { margin: 1% auto auto auto; }
+    .yerba-pic { box-shadow: 1px 2px 18px #777; }
+  
     section.section-contact-me { height: 70vh; }
 
     .contact-box p {
@@ -524,7 +547,7 @@
     p.intro-text {
         display: flex;
         align-self: center;
-        max-width: 60%;
+        max-width: 650px;
         margin: 1% auto;
     }
 
@@ -541,6 +564,7 @@
         align-items: center;
         justify-content: center;
     }
+    p.phototext { margin-top: 5%; }
 
     div.slider-gallery {
         height: auto;
