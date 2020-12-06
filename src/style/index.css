@@ -330,6 +330,7 @@ figure.author-pic img {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    box-shadow: 1px 2px 18px #777;
 }
 
 .intro-box {
@@ -518,6 +519,7 @@ button.slick-arrow.slick-prev {
 .slider-gallery img {
     height: 13.5em;
     width: 13.5em;
+    box-shadow: 1px 2px 18px #777;
 }
 
 /*----------------------*/
@@ -548,6 +550,9 @@ div.yerba-box {
     width: 13.5em;
     height: 13.5em;
 }
+
+.yerba-pic img { box-shadow: 1px 2px 18px #777; }
+
 
 div.yerba-text {
     text-align: center;
@@ -658,6 +663,8 @@ div.firstproject {
 img.projectpicture {
     width: 80%;
     height: 70%;
+    margin-bottom: 10%;
+    box-shadow: 1px 2px 18px #777;
 }
 
 /*-------------------------------*/
