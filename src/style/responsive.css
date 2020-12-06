@@ -450,19 +450,14 @@
 
     div.slider-gallery { 
         width: 400px; 
-        box-shadow: 1px 2px 18px #777;
         margin: 0 0 5% 0;
     }
     .flex-container { margin-bottom: 0;}
-    img.projectpicture { 
-        margin-bottom: 20px;
-        box-shadow: 1px 2px 18px #272727;
-    }
+    img.projectpicture { margin-bottom: 20px; }
     .project-text { width: 40%; }
 
     h2.intro-header { margin-bottom: 5%; }
     div.photo-box:first-child { margin: 1% auto auto auto; }
-    .yerba-pic { box-shadow: 1px 2px 18px #777; }
   
     section.section-contact-me { height: 70vh; }
 
