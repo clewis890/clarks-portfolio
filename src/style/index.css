@@ -469,7 +469,8 @@ img .pic-gallery {
 
 .slider-gallery {
     max-width: 80%;
-    margin: auto;
+    margin: auto auto 2em auto;
+    box-shadow: 1px 2px 18px #777;
 }
 
 button.slick-arrow.slick-prev {
@@ -519,7 +520,6 @@ button.slick-arrow.slick-prev {
 .slider-gallery img {
     height: 13.5em;
     width: 13.5em;
-    box-shadow: 1px 2px 18px #777;
 }
 
 /*----------------------*/

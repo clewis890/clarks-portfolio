@@ -97,7 +97,7 @@
         justify-content: center;
     }
 
-    div.photo-box:last-child { margin-right: 0%; }
+    div.photo-box:last-child { margin: 30px 0 30px 0; }
     h2.yerba-header-1 { margin-bottom: 15%; }
 
     div.yerba-box {
@@ -185,15 +185,6 @@
     .skillslist li:hover {
         border-bottom: 1px solid #325a76;
         cursor: pointer;
-    }
-
-    div.author-box {
-        position: absolute;
-        top: 1.5em;
-        left: 0em;
-        max-width: 100%;
-        height: auto;
-        width: 100%;
     }
 
     div.author-box {
@@ -300,7 +291,9 @@
         justify-content: center;
     }
 
-    div.photo-box:last-child { margin-right: 0%; }
+    div.photo-box:last-child { 
+        margin: 15px 0 15px 0;
+    }
     div.slider-gallery { width: 380px; }
 
     .yerba-box:last-child {
