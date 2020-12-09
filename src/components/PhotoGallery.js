@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import Slider from 'react-slick';
-
+import { SRLWrapper } from "simple-react-lightbox";
 
 import island from '../portfoliopics/island-min.jpg';
 import boatsandhills from '../portfoliopics/boatsandhills-min.jpg';
@@ -13,21 +12,22 @@ import redrocks from '../portfoliopics/redrocks-min.jpg';
 import boats from '../portfoliopics/boats-min.jpg';
 
 
+
 class PhotoGallery extends Component {
     render() {
         return (
-            <div className="slider-gallery">
-                <Slider dots={false} fade={true} infinite={true} speed={500} slidesToShow={1} arrows={true} slidesToScroll={1} className="slider">
-                    <img src={island} width="100%" alt="island"/>
-                    <img src={boatsandhills} width="100%" alt="boats and hills"/>
-                    <img src={ocean} width="100%" alt="atlantic ocean"/>
-                    <img src={tropical} width="100%" alt="tropical paradise"/>
-                    <img src={ldstemple} width="100%" alt="lds temple"/>
-                    <img src={sunset} width="100%" alt="sunset"/>
-                    <img src={desert} width="100%" alt="desert"/>
-                    <img src={redrocks} width="100%" alt="red rocks"/>
-                    <img src={boats} width="100%" alt="boats"/>
-                </Slider>
+            <div className="photo-gallery">
+                <SRLWrapper>
+                    <img src={island} width="100%" alt="Island"/>
+                    <img src={boatsandhills} width="25%" alt="Marina"/>
+                    <img src={ocean} width="25%" alt="Angra dos Reis, RJ, Brazil"/>
+                    <img src={tropical} width="25%" alt="Tropical paradise"/>
+                    <img src={ldstemple} width="25%" alt="Lds Temple Porto Alegre"/>
+                    <img src={sunset} width="25%" alt="Sunset in Porto Alegre, RS, Brazil"/>
+                    <img src={desert} width="25%" alt="Southern Utah Desert"/>
+                    <img src={redrocks} width="25%" alt="Zion National Park"/>
+                    <img src={boats} width="25%" alt="Bay in Angra dos Reis, RJ, Brazil"/>
+                </SRLWrapper>
             </div>
         )
     }

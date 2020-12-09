@@ -16,14 +16,14 @@ class Hobbies extends React.Component {
                 <section className="flex-container">
                     <div className="row">
                         <div className="photo-box">
-                        <h2 className="intro-header">Photography</h2>
+                        <h2 className="photo-header">Photography</h2>
                                 <div className="intro-text">
                                     <p className="phototext">I enjoy taking pictures wherever I go. I take my pictures with the iPhone XR. From time to time I will be rotating out the pictures I have on display here. Feel free to click or swipe on the pictures!
                                     </p>
                                 </div>
                         </div>
                         <div className="photo-box">
-                       <PhotoGallery className="slick-gallery"/>
+                       <PhotoGallery />
                         </div>
                     </div>
                 </section>

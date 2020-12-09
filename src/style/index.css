@@ -378,7 +378,7 @@ p.intro-text {
 }
 
 .skills h3 {
-    margin: 0 auto;
+    margin: 40px auto 30px auto;
     width: 90%;
 }
 
@@ -431,6 +431,11 @@ ul.skillslist {
     margin-bottom: 100px;
 }
 
+div.photo-box:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
 div.photo-box,
 div.yerba-box {
     flex-grow: 1;
@@ -439,21 +444,23 @@ div.yerba-box {
 }
 
 h2.photo-header {
-    font-size: 110%;
-    color: #0a0a0a
+    font-size: 230%;
+    color: #0a0a0a;
+    margin: 0 auto 7% auto;
+    display: block;
+    flex-grow: auto;
 }
 
 h2.photo-header:after {
+    content: " ";
+    border-bottom: 2px solid #4b87b2;
     display: block;
-    height: 0;
     background-color: #4b87b2;
-    width: 100px;
-    margin: 50px auto 0 auto;
+    width: 150px;
+    margin: 25px auto 30px auto;
 }
 
-.photo-box {
-    width: 100%;
-}
+.photo-box { width: 100%; }
 
 div.intro-text {
     width: 80%;
@@ -467,44 +474,10 @@ img .pic-gallery {
     max-width: 90%;
 }
 
-.slider-gallery {
+div.photo-gallery {
     max-width: 80%;
-    margin: auto;
-}
-
-button.slick-arrow.slick-prev {
-    z-index: 500;
-    color: #fff !important;
-}
-
-button.slick-arrow.slick-next {
-    z-index: 1;
-    right: 1.3em;
-    color: #fff !important;
-
-}
-
-.slick-prev:before {
-    position: relative;
-    color: #fff !important;
-}
-
-.slick-prev:before,
-button.slick-arrow.slick-prev {
-    margin-left: 1.3em;
-}
-
-
-.slick-next:before {
-    color: #fff !important;
-    position: relative;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: #fff !important;
-    opacity: 1;
-    z-index: 9999;
+    margin: auto auto 2em auto;
+    box-shadow: 1px 2px 18px #777;
 }
 
 .photo-box:last-child {
@@ -516,11 +489,6 @@ button.slick-arrow.slick-prev {
     width: 50px;
 }
 
-.slider-gallery img {
-    height: 13.5em;
-    width: 13.5em;
-    box-shadow: 1px 2px 18px #777;
-}
 
 /*----------------------*/
 /*-----YERBA MATE-------*/
@@ -533,7 +501,6 @@ h2.yerba-header-1 {
     font-size: 230%;
     display: block;
     margin-bottom: 7%;
-    color: #325a76;
 }
 
 h2.yerba-header-2 {
@@ -619,19 +586,15 @@ h2.project-header {
     margin: auto;
 }
 
-.project-header {
-    width: 80%;
-}
+h2.project-header { width: 80%; }
 
-.project-text {
-    width: 40%;
-}
+p.project-text { width: 70%; }
 
 h3.project-title {
     display: flex;
     align-self: center;
     max-width: 80%;
-    margin: 10% auto 0 auto;
+    margin: 60px auto 40px auto;
 }
 
 .row h3.project-title {
@@ -671,7 +634,7 @@ img.projectpicture {
 /*-------- Contact Section-------*/
 /*-------------------------------*/
 
-section.section-contact-me {
+/* section.section-contact-me {
     height: auto;
     max-width: 100%;
     position: relative;
@@ -787,7 +750,7 @@ button.btn {
 .btn:hover,
 .btn:active {
     background-color: #e78e35;
-}
+} */
 
 
 /*----------------------------------*/
