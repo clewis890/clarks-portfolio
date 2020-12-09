@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+import SimpleReactLightbox from "simple-react-lightbox";
+
 import history from '../history';
 import Home from '../containers/Home';
 import Hobbies from '../containers/Hobbies';
@@ -17,6 +19,7 @@ class App extends React.Component {
     render() {
         return (   
             <div className="App">
+                <SimpleReactLightbox>
             <Router history={history}>
                 <Switch>
                     <Route exact path='/' component={Home} />
@@ -25,6 +28,7 @@ class App extends React.Component {
                     <Route path='/Contact' component={Contact} />
                </Switch>
             </Router>
+            </SimpleReactLightbox>
             </div>
             );
         }
