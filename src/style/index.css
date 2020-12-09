@@ -472,12 +472,18 @@ img .pic-gallery {
     height: 50px;
     width: 50px;
     max-width: 90%;
+    
 }
 
 div.photo-gallery {
     max-width: 80%;
     margin: auto auto 2em auto;
     box-shadow: 1px 2px 18px #777;
+    
+}
+
+.photo-gallery img:first-child {
+    border-bottom: 4px solid #0a0a0af6;
 }
 
 .photo-box:last-child {

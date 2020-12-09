@@ -18,15 +18,15 @@ class PhotoGallery extends Component {
         return (
             <div className="photo-gallery">
                 <SRLWrapper>
-                    <img src={island} width="100%" alt="Island"/>
-                    <img src={boatsandhills} width="25%" alt="Marina"/>
-                    <img src={ocean} width="25%" alt="Angra dos Reis, RJ, Brazil"/>
-                    <img src={tropical} width="25%" alt="Tropical paradise"/>
-                    <img src={ldstemple} width="25%" alt="Lds Temple Porto Alegre"/>
-                    <img src={sunset} width="25%" alt="Sunset in Porto Alegre, RS, Brazil"/>
-                    <img src={desert} width="25%" alt="Southern Utah Desert"/>
-                    <img src={redrocks} width="25%" alt="Zion National Park"/>
-                    <img src={boats} width="25%" alt="Bay in Angra dos Reis, RJ, Brazil"/>
+                    <img src={island} width="100%" alt="Island" className="picture" />
+                    <img src={boatsandhills} width="25%" alt="Marina" className="picture" />
+                    <img src={ocean} width="25%" alt="Angra dos Reis, RJ, Brazil" className="picture" />
+                    <img src={tropical} width="25%" alt="Tropical paradise" className="picture" />
+                    <img src={ldstemple} width="25%" alt="Lds Temple Porto Alegre" className="picture" />
+                    <img src={sunset} width="25%" alt="Sunset in Porto Alegre, RS, Brazil" className="picture" />
+                    <img src={desert} width="25%" alt="Southern Utah Desert" className="picture" />
+                    <img src={redrocks} width="25%" alt="Zion National Park" className="picture" />
+                    <img src={boats} width="25%" alt="Bay in Angra dos Reis, RJ, Brazil" className="picture" />
                 </SRLWrapper>
             </div>
         )
