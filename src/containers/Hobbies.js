@@ -40,7 +40,7 @@ class Hobbies extends React.Component {
                         <h2 className="yerba-header-2">Yerba Mate</h2> 
                         <div className="yerba-text">
                             <p>On my first trip to Brazil in 2010, I was introduced to yerba mate (Chimarrao). 
-                                Long story short, I got hooked. The culture that surrounds Yerba Mate is very intriguing to me and I am constantly informing myself with the latest news in the mate industry.
+                                Long story short, I got hooked. Besides being an ultra-healthy drink loaded with vitamins and minerals, the culture that surrounds is all about gathering and sharing moments, and that is something that is important to me.
                                 A friend of mine and I even started the only podcast about Yerba Mate in the English language. Visit our podcast blog here <b>&#10132;</b><a href="http://www.mateguys.com" className="mateguys-link">The Mate Guys Podcast</a></p>
                         </div>
                         </div>
