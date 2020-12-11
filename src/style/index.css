@@ -368,9 +368,7 @@ p.intro-text {
     display: block;
 }
 
-.section-aboutme div.row div.box {
-    z-index: 0;
-}
+.section-aboutme div.row div.box { z-index: 0; }
 
 .skills {
     width: 100%;
@@ -405,9 +403,7 @@ a.skilllink:hover {
     padding: 2px;
 }
 
-ul.skillslist {
-    color: #325a76;
-}
+ul.skillslist { color: #325a76; }
 
 /*----------------------*/
 /*-----PHOTOGRAPHY------*/
@@ -480,9 +476,9 @@ div.photo-gallery {
     box-shadow: 1px 2px 18px #777;
 }
 
-.photo-box:last-child {
-    z-index: 0;
-}
+.photo-gallery img:first-child { border-bottom: 4px solid #0a0a0af6; }
+
+.photo-box:last-child { z-index: 0; }
 
 .pic-gallery {
     height: 50px;
