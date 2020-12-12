@@ -15,7 +15,7 @@ class Header extends Component {
                         <p className="header-text"> I'm a Web Developer</p>
                     </div>
                         <div className="navigation">
-                           <NavBar />
+                           {/* <NavBar /> */}
                         </div>
                 </header>
         );
